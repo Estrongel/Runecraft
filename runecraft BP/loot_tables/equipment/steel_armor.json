@@ -1,0 +1,172 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "runecraft:steel_helm",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_helm_t",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_helm_g",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "runecraft:steel_platelegs",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_platelegs_t",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_platelegs_g",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "runecraft:steel_boots",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_boots_t",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_boots_g",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "runecraft:steel_platebody",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_platebody_t",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "runecraft:steel_platebody_g",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.25
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

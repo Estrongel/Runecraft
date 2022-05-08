@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:wood_axe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "wood_axe",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

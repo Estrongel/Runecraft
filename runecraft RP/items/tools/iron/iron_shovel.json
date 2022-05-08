@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:iron_shovel",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "iron_shovel",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:black_hoe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "black_hoe",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

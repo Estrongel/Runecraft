@@ -1,0 +1,171 @@
+{
+  "pools": [
+    /*{
+      "type": "empty",
+      "weight": 66
+    },
+    {
+      "type": "item",
+      "name": "runecraft:bronze_scimitar",
+      "weight": 22,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:iron_scimitar",
+      "weight": 16,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:steel_scimitar",
+      "weight": 11,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:black_scimitar",
+      "weight": 7,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:mithril_scimitar",
+      "weight": 4,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:adamant_scimitar",
+      "weight": 2,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "runecraft:rune_scimitar",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "looting_enchant",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "enchant_random_gear",
+          "chance": 0.25
+        }
+      ]
+    },*/
+    {
+      "tiers": {
+        "initial_range": 2,
+        "bonus_rolls": 7,
+        "bonus_chance": 0.10
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/bronze_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/iron_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/steel_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/black_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/mithril_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/adamant_armor.json"
+        },
+        {
+          "type": "loot_table",
+          "name": "loot_tables/equipment/rune_armor.json"
+        }
+      ]
+    }
+  ]
+}

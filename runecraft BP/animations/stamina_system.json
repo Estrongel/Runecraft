@@ -1,0 +1,107 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.stamina_drain": {
+      "timeline": {
+		"0.0": "/scoreboard players remove @s stamina_main 10"
+      },
+      "animation_length": 0.25
+    },
+	"animation.stamina_drain_skillcape": {
+		"timeline": {
+		  "0.0": "/scoreboard players remove @s stamina_main 6"
+		},
+		"animation_length": 0.25
+	  },
+	"animation.stamina_gain_walk_full_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 20"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_walk_three_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 16"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_walk_two_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 14"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_walk_one_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 12"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_walking_n": {
+	  "timeline": {
+		  "0.0": "/scoreboard players add @s stamina_main 10"
+	  },
+	  "animation_length": 1.0
+	},
+	"animation.stamina_gain_sneak_full_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 40"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_sneak_three_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 32"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_sneak_two_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 28"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_sneak_one_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 24"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_sneaking_n": {
+	  "timeline": {
+		  "0.0": "/scoreboard players add @s stamina_main 20"
+	  },
+	  "animation_length": 1.0
+	},
+	"animation.stamina_gain_standing_full_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 60"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_standing_three_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 48"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_standing_two_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 42"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_standing_one_grace": {
+		"timeline": {
+			"0.0": "/scoreboard players add @s stamina_main 36"
+		},
+		"animation_length": 1.0
+	},
+	"animation.stamina_gain_standing_n": {
+	  "timeline": {
+		  "0.0": "/scoreboard players add @s stamina_main 30"
+	  },
+	  "animation_length": 1.0
+	}
+  }
+}

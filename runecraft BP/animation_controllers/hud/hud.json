@@ -1,0 +1,4120 @@
+//ANIMATION CONTROLLER BY ESTRONGEL
+//SUBSCRIBE https://www.youtube.com/channel/UCZnU2d_P45hy5LHbCQ3xiOA
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+
+		//RuneCraft health displays
+		"controller.animation.hp_text": {
+			"initial_state": "default", 
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"0": "query.health == 0"
+						},
+						{
+							"1": "query.health == 1"
+						},
+						{
+							"2": "query.health == 2"
+						},
+						{
+							"3": "query.health == 3"
+						},
+						{
+							"4": "query.health == 4"
+						},
+						{
+							"5": "query.health == 5"
+						},
+						{
+							"6": "query.health == 6"
+						},
+						{
+							"7": "query.health == 7"
+						},
+						{
+							"8": "query.health == 8"
+						},
+						{
+							"9": "query.health == 9"
+						},
+						{
+							"10": "query.health == 10"
+						},
+						{
+							"11": "query.health == 11"
+						},
+						{
+							"12": "query.health == 12"
+						},
+						{
+							"13": "query.health == 13"
+						},
+						{
+							"14": "query.health == 14"
+						},
+						{
+							"15": "query.health == 15"
+						},
+						{
+							"16": "query.health == 16"
+						},
+						{
+							"17": "query.health == 17"
+						},
+						{
+							"18": "query.health == 18"
+						},
+						{
+							"19": "query.health == 19"
+						},
+						{
+							"20": "query.health == 20"
+						},
+						{
+							"21": "query.health == 21"
+						},
+						{
+							"22": "query.health == 22"
+						},
+						{
+							"23": "query.health == 23"
+						},
+						{
+							"24": "query.health == 24"
+						},
+						{
+							"25": "query.health == 25"
+						},
+						{
+							"26": "query.health == 26"
+						},
+						{
+							"27": "query.health == 27"
+						},
+						{
+							"28": "query.health == 28"
+						},
+						{
+							"29": "query.health == 29"
+						},
+						{
+							"30": "query.health == 30"
+						},
+						{
+							"31": "query.health == 31"
+						},
+						{
+							"32": "query.health == 32"
+						},
+						{
+							"33": "query.health == 33"
+						},
+						{
+							"34": "query.health == 34"
+						},
+						{
+							"35": "query.health == 35"
+						},
+						{
+							"36": "query.health == 36"
+						},
+						{
+							"37": "query.health == 37"
+						},
+						{
+							"38": "query.health == 38"
+						},
+						{
+							"39": "query.health == 39"
+						},
+						{
+							"40": "query.health == 40"
+						}
+					]
+				},
+				"0": {
+					"transitions": [
+						{
+							"default": "query.health != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 0"
+					]
+				},
+				"1": {
+					"transitions": [
+						{
+							"default": "query.health != 1"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 1"
+					]
+				},
+				"2": {
+					"transitions": [
+						{
+							"default": "query.health != 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 2"
+					]
+				},
+				"3": {
+					"transitions": [
+						{
+							"default": "query.health != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 3"
+					]
+				},
+				"4": {
+					"transitions": [
+						{
+							"default": "query.health != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 4"
+					]
+				},
+				"5": {
+					"transitions": [
+						{
+							"default": "query.health != 5"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 5"
+					]
+				},
+				"6": {
+					"transitions": [
+						{
+							"default": "query.health != 6"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 6"
+					]
+				},
+				"7": {
+					"transitions": [
+						{
+							"default": "query.health != 7"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 7"
+					]
+				},
+				"8": {
+					"transitions": [
+						{
+							"default": "query.health != 8"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 8"
+					]
+				},
+				"9": {
+					"transitions": [
+						{
+							"default": "query.health != 9"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 9"
+					]
+				},
+				"10": {
+					"transitions": [
+						{
+							"default": "query.health != 10"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 10"
+					]
+				},
+				"11": {
+					"transitions": [
+						{
+							"default": "query.health != 11"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 11"
+					]
+				},
+				"12": {
+					"transitions": [
+						{
+							"default": "query.health != 12"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 12"
+					]
+				},
+				"13": {
+					"transitions": [
+						{
+							"default": "query.health != 13"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 13"
+					]
+				},
+				"14": {
+					"transitions": [
+						{
+							"default": "query.health != 14"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 14"
+					]
+				},
+				"15": {
+					"transitions": [
+						{
+							"default": "query.health != 15"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 15"
+					]
+				},
+				"16": {
+					"transitions": [
+						{
+							"default": "query.health != 16"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 16"
+					]
+				},
+				"17": {
+					"transitions": [
+						{
+							"default": "query.health != 17"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 17"
+					]
+				},
+				"18": {
+					"transitions": [
+						{
+							"default": "query.health != 18"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 18"
+					]
+				},
+				"19": {
+					"transitions": [
+						{
+							"default": "query.health != 19"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 19"
+					]
+				},
+				"20": {
+					"transitions": [
+						{
+							"default": "query.health != 20"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 20"
+					]
+				},
+				"21": {
+					"transitions": [
+						{
+							"default": "query.health != 21"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 21"
+					]
+				},
+				"22": {
+					"transitions": [
+						{
+							"default": "query.health != 22"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 22"
+					]
+				},
+				"23": {
+					"transitions": [
+						{
+							"default": "query.health != 23"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 23"
+					]
+				},
+				"24": {
+					"transitions": [
+						{
+							"default": "query.health != 24"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 24"
+					]
+				},
+				"25": {
+					"transitions": [
+						{
+							"default": "query.health != 25"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 25"
+					]
+				},
+				"26": {
+					"transitions": [
+						{
+							"default": "query.health != 26"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 26"
+					]
+				},
+				"27": {
+					"transitions": [
+						{
+							"default": "query.health != 27"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 27"
+					]
+				},
+				"28": {
+					"transitions": [
+						{
+							"default": "query.health != 28"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 28"
+					]
+				},
+				"29": {
+					"transitions": [
+						{
+							"default": "query.health != 29"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 29"
+					]
+				},
+				"30": {
+					"transitions": [
+						{
+							"default": "query.health != 30"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 30"
+					]
+				},
+				"31": {
+					"transitions": [
+						{
+							"default": "query.health != 31"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 31"
+					]
+				},
+				"32": {
+					"transitions": [
+						{
+							"default": "query.health != 32"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 32"
+					]
+				},
+				"33": {
+					"transitions": [
+						{
+							"default": "query.health != 33"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 33"
+					]
+				},
+				"34": {
+					"transitions": [
+						{
+							"default": "query.health != 34"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 34"
+					]
+				},
+				"35": {
+					"transitions": [
+						{
+							"default": "query.health != 35"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 35"
+					]
+				},
+				"36": {
+					"transitions": [
+						{
+							"default": "query.health != 36"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 36"
+					]
+				},
+				"37": {
+					"transitions": [
+						{
+							"default": "query.health != 37"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 37"
+					]
+				},
+				"38": {
+					"transitions": [
+						{
+							"default": "query.health != 38"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 38"
+					]
+				},
+				"39": {
+					"transitions": [
+						{
+							"default": "query.health != 39"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 39"
+					]
+				},
+				"40": {
+					"transitions": [
+						{
+							"default": "query.health != 40"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_text 40"
+					]
+				}
+			}
+		},
+
+		//image
+		"controller.animation.hp_setter": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"100w": "query.in_range(math.floor((query.health/query.max_health) * 100),98,100) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"95w": "query.in_range(math.floor((query.health/query.max_health) * 100),91,97) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"90w": "query.in_range(math.floor((query.health/query.max_health) * 100),86,90) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"85w": "query.in_range(math.floor((query.health/query.max_health) * 100),81,85) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"80w": "query.in_range(math.floor((query.health/query.max_health) * 100),76,80) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"75w": "query.in_range(math.floor((query.health/query.max_health) * 100),71,75) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"70w": "query.in_range(math.floor((query.health/query.max_health) * 100),66,70) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"65w": "query.in_range(math.floor((query.health/query.max_health) * 100),61,65) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"60w": "query.in_range(math.floor((query.health/query.max_health) * 100),56,60) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"55w": "query.in_range(math.floor((query.health/query.max_health) * 100),51,55) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"50w": "query.in_range(math.floor((query.health/query.max_health) * 100),46,50) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"45w": "query.in_range(math.floor((query.health/query.max_health) * 100),41,45) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"40w": "query.in_range(math.floor((query.health/query.max_health) * 100),36,40) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"35w": "query.in_range(math.floor((query.health/query.max_health) * 100),31,35) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"30w": "query.in_range(math.floor((query.health/query.max_health) * 100),26,30) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"25w": "query.in_range(math.floor((query.health/query.max_health) * 100),21,25) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"20w": "query.in_range(math.floor((query.health/query.max_health) * 100),16,20) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"15w": "query.in_range(math.floor((query.health/query.max_health) * 100),11,15) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"10w": "query.in_range(math.floor((query.health/query.max_health) * 100),6,10) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"5w": "query.in_range(math.floor((query.health/query.max_health) * 100),1,5) && query.scoreboard('health_effect') == 4"
+						},
+						{
+							"100a": "query.in_range(math.floor((query.health/query.max_health) * 100),98,100) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"95a": "query.in_range(math.floor((query.health/query.max_health) * 100),91,97) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"90a": "query.in_range(math.floor((query.health/query.max_health) * 100),86,90) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"85a": "query.in_range(math.floor((query.health/query.max_health) * 100),81,85) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"80a": "query.in_range(math.floor((query.health/query.max_health) * 100),76,80) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"75a": "query.in_range(math.floor((query.health/query.max_health) * 100),71,75) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"70a": "query.in_range(math.floor((query.health/query.max_health) * 100),66,70) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"65a": "query.in_range(math.floor((query.health/query.max_health) * 100),61,65) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"60a": "query.in_range(math.floor((query.health/query.max_health) * 100),56,60) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"55a": "query.in_range(math.floor((query.health/query.max_health) * 100),51,55) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"50a": "query.in_range(math.floor((query.health/query.max_health) * 100),46,50) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"45a": "query.in_range(math.floor((query.health/query.max_health) * 100),41,45) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"40a": "query.in_range(math.floor((query.health/query.max_health) * 100),36,40) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"35a": "query.in_range(math.floor((query.health/query.max_health) * 100),31,35) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"30a": "query.in_range(math.floor((query.health/query.max_health) * 100),26,30) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"25a": "query.in_range(math.floor((query.health/query.max_health) * 100),21,25) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"20a": "query.in_range(math.floor((query.health/query.max_health) * 100),16,20) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"15a": "query.in_range(math.floor((query.health/query.max_health) * 100),11,15) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"10a": "query.in_range(math.floor((query.health/query.max_health) * 100),6,10) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"5a": "query.in_range(math.floor((query.health/query.max_health) * 100),1,5) && query.scoreboard('health_effect') == 3"
+						},
+						{
+							"100p": "query.in_range(math.floor((query.health/query.max_health) * 100),98,100) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"95p": "query.in_range(math.floor((query.health/query.max_health) * 100),91,97) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"90p": "query.in_range(math.floor((query.health/query.max_health) * 100),86,90) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"85p": "query.in_range(math.floor((query.health/query.max_health) * 100),81,85) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"80p": "query.in_range(math.floor((query.health/query.max_health) * 100),76,80) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"75p": "query.in_range(math.floor((query.health/query.max_health) * 100),71,75) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"70p": "query.in_range(math.floor((query.health/query.max_health) * 100),66,70) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"65p": "query.in_range(math.floor((query.health/query.max_health) * 100),61,65) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"60p": "query.in_range(math.floor((query.health/query.max_health) * 100),56,60) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"55p": "query.in_range(math.floor((query.health/query.max_health) * 100),51,55) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"50p": "query.in_range(math.floor((query.health/query.max_health) * 100),46,50) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"45p": "query.in_range(math.floor((query.health/query.max_health) * 100),41,45) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"40p": "query.in_range(math.floor((query.health/query.max_health) * 100),36,40) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"35p": "query.in_range(math.floor((query.health/query.max_health) * 100),31,35) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"30p": "query.in_range(math.floor((query.health/query.max_health) * 100),26,30) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"25p": "query.in_range(math.floor((query.health/query.max_health) * 100),21,25) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"20p": "query.in_range(math.floor((query.health/query.max_health) * 100),16,20) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"15p": "query.in_range(math.floor((query.health/query.max_health) * 100),11,15) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"10p": "query.in_range(math.floor((query.health/query.max_health) * 100),6,10) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"5p": "query.in_range(math.floor((query.health/query.max_health) * 100),1,5) && (query.scoreboard('health_effect') == 1 || query.scoreboard('health_effect') == 2)"
+						},
+						{
+							"100n": "query.in_range(math.floor((query.health/query.max_health) * 100),98,100)"
+						},
+						{
+							"95n": "query.in_range(math.floor((query.health/query.max_health) * 100),91,97)"
+						},
+						{
+							"90n": "query.in_range(math.floor((query.health/query.max_health) * 100),86,90)"
+						},
+						{
+							"85n": "query.in_range(math.floor((query.health/query.max_health) * 100),81,85)"
+						},
+						{
+							"80n": "query.in_range(math.floor((query.health/query.max_health) * 100),76,80)"
+						},
+						{
+							"75n": "query.in_range(math.floor((query.health/query.max_health) * 100),71,75)"
+						},
+						{
+							"70n": "query.in_range(math.floor((query.health/query.max_health) * 100),66,70)"
+						},
+						{
+							"65n": "query.in_range(math.floor((query.health/query.max_health) * 100),61,65)"
+						},
+						{
+							"60n": "query.in_range(math.floor((query.health/query.max_health) * 100),56,60)"
+						},
+						{
+							"55n": "query.in_range(math.floor((query.health/query.max_health) * 100),51,55)"
+						},
+						{
+							"50n": "query.in_range(math.floor((query.health/query.max_health) * 100),46,50)"
+						},
+						{
+							"45n": "query.in_range(math.floor((query.health/query.max_health) * 100),41,45)"
+						},
+						{
+							"40n": "query.in_range(math.floor((query.health/query.max_health) * 100),36,40)"
+						},
+						{
+							"35n": "query.in_range(math.floor((query.health/query.max_health) * 100),31,35)"
+						},
+						{
+							"30n": "query.in_range(math.floor((query.health/query.max_health) * 100),26,30)"
+						},
+						{
+							"25n": "query.in_range(math.floor((query.health/query.max_health) * 100),21,25)"
+						},
+						{
+							"20n": "query.in_range(math.floor((query.health/query.max_health) * 100),16,20)"
+						},
+						{
+							"15n": "query.in_range(math.floor((query.health/query.max_health) * 100),11,15)"
+						},
+						{
+							"10n": "query.in_range(math.floor((query.health/query.max_health) * 100),6,10)"
+						},
+						{
+							"5n": "query.in_range(math.floor((query.health/query.max_health) * 100),1,5)"
+						},
+						{
+							"0": "math.floor((query.health/query.max_health) * 100) == 0"
+						}
+					]
+				},
+				"100w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),98,100) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 61"
+					]
+				},
+				"95w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),91,97) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 62"
+					]
+				},
+				"90w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),86,90) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 63"
+					]
+				},
+				"85w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),81,85) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 64"
+					]
+				},
+				"80w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),76,80) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 65"
+					]
+				},
+				"75w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),71,75) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 66"
+					]
+				},
+				"70w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),66,70) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 67"
+					]
+				},
+				"65w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),61,65) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 68"
+					]
+				},
+				"60w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),56,60) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 69"
+					]
+				},
+				"55w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),51,55) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 70"
+					]
+				},
+				"50w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),46,50) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 71"
+					]
+				},
+				"45w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),41,45) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 72"
+					]
+				},
+				"40w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),36,40) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 73"
+					]
+				},
+				"35w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),31,35) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 74"
+					]
+				},
+				"30w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),26,30) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 75"
+					]
+				},
+				"25w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),21,25) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 76"
+					]
+				},
+				"20w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),16,20) || query.scoreboard('health_effect') !=4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 77"
+					]
+				},
+				"15w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),11,15) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 78"
+					]
+				},
+				"10w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),6,10) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 79"
+					]
+				},
+				"5w": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),1,5) || query.scoreboard('health_effect') != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 80"
+					]
+				},
+				"100a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),98,100) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 41"
+					]
+				},
+				"95a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),91,97) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 42"
+					]
+				},
+				"90a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),86,90) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 43"
+					]
+				},
+				"85a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),81,85) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 44"
+					]
+				},
+				"80a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),76,80) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 45"
+					]
+				},
+				"75a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),71,75) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 46"
+					]
+				},
+				"70a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),66,70) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 47"
+					]
+				},
+				"65a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),61,65) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 48"
+					]
+				},
+				"60a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),56,60) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 49"
+					]
+				},
+				"55a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),51,55) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 50"
+					]
+				},
+				"50a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),46,50) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 51"
+					]
+				},
+				"45a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),41,45) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 52"
+					]
+				},
+				"40a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),36,40) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 53"
+					]
+				},
+				"35a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),31,35) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 54"
+					]
+				},
+				"30a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),26,30) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 55"
+					]
+				},
+				"25a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),21,25) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 56"
+					]
+				},
+				"20a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),16,20) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 57"
+					]
+				},
+				"15a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),11,15) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 58"
+					]
+				},
+				"10a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),6,10) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 59"
+					]
+				},
+				"5a": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),1,5) || query.scoreboard('health_effect') != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 60"
+					]
+				},
+				"100p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),98,100) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 21"
+					]
+				},
+				"95p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),91,97) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 22"
+					]
+				},
+				"90p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),86,90) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 23"
+					]
+				},
+				"85p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),81,85) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 24"
+					]
+				},
+				"80p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),76,80) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 25"
+					]
+				},
+				"75p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),71,75) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 26"
+					]
+				},
+				"70p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),66,70) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 27"
+					]
+				},
+				"65p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),61,65) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 28"
+					]
+				},
+				"60p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),56,60) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 29"
+					]
+				},
+				"55p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),51,55) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 30"
+					]
+				},
+				"50p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),46,50) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 31"
+					]
+				},
+				"45p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),41,45) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 32"
+					]
+				},
+				"40p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),36,40) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 33"
+					]
+				},
+				"35p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),31,35) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 34"
+					]
+				},
+				"30p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),26,30) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 35"
+					]
+				},
+				"25p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),21,25) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 36"
+					]
+				},
+				"20p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),16,20) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 37"
+					]
+				},
+				"15p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),11,15) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 38"
+					]
+				},
+				"10p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),6,10) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 39"
+					]
+				},
+				"5p": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),1,5) || (query.scoreboard('health_effect') != 1 && query.scoreboard('health_effect') != 2)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 40"
+					]
+				},
+				"100n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),98,100) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 1"
+					]
+				},
+				"95n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),91,97) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 2"
+					]
+				},
+				"90n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),86,90) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 3"
+					]
+				},
+				"85n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),81,85) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 4"
+					]
+				},
+				"80n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),76,80) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 5"
+					]
+				},
+				"75n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),71,75) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 6"
+					]
+				},
+				"70n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),66,70) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 7"
+					]
+				},
+				"65n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),61,65) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 8"
+					]
+				},
+				"60n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),56,60) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 9"
+					]
+				},
+				"55n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),51,55) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 10"
+					]
+				},
+				"50n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),46,50) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 11"
+					]
+				},
+				"45n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),41,45) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 12"
+					]
+				},
+				"40n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),36,40) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 13"
+					]
+				},
+				"35n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),31,35) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 14"
+					]
+				},
+				"30n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),26,30) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 15"
+					]
+				},
+				"25n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),21,25) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 16"
+					]
+				},
+				"20n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),16,20) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 17"
+					]
+				},
+				"15n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),11,15) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 18"
+					]
+				},
+				"10n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),6,10) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 19"
+					]
+				},
+				"5n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(math.floor((query.health/query.max_health) * 100),1,5) || query.scoreboard('health_effect') != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 20"
+					]
+				},
+				"0": {
+					"transitions": [
+						{
+							"default": "math.floor((query.health/query.max_health) * 100) != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s hp_hud 0"
+					]
+				}
+			}
+		},
+
+		//RuneCraft armor display
+
+		//calculating total armor
+		"controller.animation.total_armor": {
+			"initial_state": "default", 
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"calculate_armor_value": "query.scoreboard('t_av') != (query.scoreboard('h_av') + query.scoreboard('c_av') + query.scoreboard('l_av') + query.scoreboard('b_av'))"
+						}
+					]
+				},
+				"calculate_armor_value": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s t_av 0",
+						"/scoreboard players operation @s t_av += @s h_av",
+						"/scoreboard players operation @s t_av += @s c_av",
+						"/scoreboard players operation @s t_av += @s l_av",
+						"/scoreboard players operation @s t_av += @s b_av"
+					]
+				}
+			}
+		},
+
+		//calculating helmet value
+		"controller.animation.helmet_value": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"helmet": "query.any(query.armor_texture_slot(0),0,1,2,3,4,6,7) || query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_1') || query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_2') || query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_3') || query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_4') || query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_5')"
+						}
+					]
+				},
+				"helmet": {
+					"transitions": [
+						{
+							"custom_tier1": "query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_1')"
+						},
+						{
+							"custom_tier2": "query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_2')"
+						},
+						{
+							"custom_tier3": "query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_3')"
+						},
+						{
+							"custom_tier4": "query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_4')"
+						},
+						{
+							"custom_tier5": "query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_5')"
+						},
+						{
+							"h_none": "query.armor_texture_slot(0) == -1"
+						},
+						{
+							"h_1": "query.armor_texture_slot(0) == 0"
+						},
+						{
+							"h_2": "query.any(query.armor_texture_slot(0),1,2,4,6)"
+						},
+						{
+							"h_3": "query.armor_texture_slot(0) == 3 || query.armor_texture_slot(0) == 7"
+						},
+						{
+							"default": "1.0"
+						}
+					]
+				},
+				//no armor helmet equipped
+				"h_none": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 0"
+					]
+				},
+				//helmet with armor value 1 equipped
+				"h_1": {
+					"transitions": [
+						{
+							"helmet": "!query.armor_texture_slot(0) == 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 1"
+					]
+				},
+				//helmet with armor value 2 equipped
+				"h_2": {
+					"transitions": [
+						{
+							"helmet": "!query.any(query.armor_texture_slot(0),1,2,4,6)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 2"
+					]
+				},
+				//helmet with armor value 3 equipped
+				"h_3": {
+					"transitions": [
+						{
+							"helmet": "!(query.armor_texture_slot(0) == 3 || query.armor_texture_slot(0) == 7)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 3"
+					]
+				},
+				"custom_tier1": {
+					"transitions": [
+						{
+							"helmet": "!query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_1')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 1"
+					]
+				},
+				"custom_tier2": {
+					"transitions": [
+						{
+							"helmet": "!query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_2')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 2"
+					]
+				},
+				"custom_tier3": {
+					"transitions": [
+						{
+							"helmet": "!query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_3')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 3"
+					]
+				},
+				"custom_tier4": {
+					"transitions": [
+						{
+							"helmet": "!query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_4')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 4"
+					]
+				},
+				"custom_tier5": {
+					"transitions": [
+						{
+							"helmet": "!query.equipped_item_any_tag('slot.armor.head','runecraft:armor_tier_5')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s h_av 5"
+					]
+				}
+			}
+		},
+
+		//calculating chestplate value
+		"controller.animation.chestplate_value": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"chestplate": "query.any(query.armor_texture_slot(1),0,1,2,3,4,5,7) || query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_1') || query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_2') || query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_3') || query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_4') || query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_5')"
+						}
+					]
+				},
+				"chestplate": {
+					"transitions": [
+						{
+							"custom_tier1": "query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_1')"
+						},
+						{
+							"custom_tier2": "query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_2')"
+						},
+						{
+							"custom_tier3": "query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_3')"
+						},
+						{
+							"custom_tier4": "query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_4')"
+						},
+						{
+							"custom_tier5": "query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_5')"
+						},
+						{
+							"c_none": "query.armor_texture_slot(1) == -1 || query.armor_texture_slot(1) == 5"
+						},
+						{
+							"c_3": "query.armor_texture_slot(1) == 0"
+						},
+						{
+							"c_5": "query.armor_texture_slot(1) == 1 || query.armor_texture_slot(1) == 4"
+						},
+						{
+							"c_6": "query.armor_texture_slot(1) == 2"
+						},
+						{
+							"c_8": "query.armor_texture_slot(1) == 3 || query.armor_texture_slot(1) == 7"
+						},
+						{
+							"default": "1.0"
+						}
+					]
+				},
+				"custom_tier1": {
+					"transitions": [
+						{
+							"chestplate": "!query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_1')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 1"
+					]
+				},
+				"custom_tier2": {
+					"transitions": [
+						{
+							"chestplate": "!query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_2')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 2"
+					]
+				},
+				"custom_tier3": {
+					"transitions": [
+						{
+							"chestplate": "!query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_3')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 3"
+					]
+				},
+				"custom_tier4": {
+					"transitions": [
+						{
+							"chestplate": "!query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_4')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 4"
+					]
+				},
+				"custom_tier5": {
+					"transitions": [
+						{
+							"chestplate": "!query.equipped_item_any_tag('slot.armor.chest','runecraft:armor_tier_5')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 5"
+					]
+				},
+				//no armor chestplate equipped
+				"c_none": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 0"
+					]
+				},
+				//chestplate with armor value 3 equipped
+				"c_3": {
+					"transitions": [
+						{
+							"chestplate": "!query.armor_texture_slot(1) == 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 3"
+					]
+				},
+				//chestplate with armor value 5 equipped
+				"c_5": {
+					"transitions": [
+						{
+							"chestplate": "!(query.armor_texture_slot(1) == 1 || query.armor_texture_slot(1) == 4)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 5"
+					]
+				},
+				//chestplate with armor value 6 equipped
+				"c_6": {
+					"transitions": [
+						{
+							"chestplate": "query.armor_texture_slot(1) != 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 6"
+					]
+				},
+				//chestplate with armor value 8 equipped
+				"c_8": {
+					"transitions": [
+						{
+							"chestplate": "!(query.armor_texture_slot(1) == 3 || query.armor_texture_slot(1) == 7)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s c_av 8"
+					]
+				}
+			}
+		},
+
+		//calculate legging value
+		"controller.animation.legging_value": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"leggings": "query.any(query.armor_texture_slot(2),0,1,2,3,4,7) || query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_1') || query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_2') || query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_3') || query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_4') || query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_5')"
+						}
+					]
+				},
+				"leggings": {
+					"transitions": [
+						{
+							"custom_tier1": "query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_1')"
+						},
+						{
+							"custom_tier2": "query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_2')"
+						},
+						{
+							"custom_tier3": "query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_3')"
+						},
+						{
+							"custom_tier4": "query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_4')"
+						},
+						{
+							"custom_tier5": "query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_5')"
+						},
+						{
+							"l_none": "query.armor_texture_slot(2) == -1"
+						},
+						{
+							"l_2": "query.armor_texture_slot(2) == 0"
+						},
+						{
+							"l_3": "query.armor_texture_slot(2) == 4"
+						},
+						{
+							"l_4": "query.armor_texture_slot(2) == 1"
+						},
+						{
+							"l_5": "query.armor_texture_slot(2) == 2"
+						},
+						{
+							"l_6": "query.armor_texture_slot(2) == 3 || query.armor_texture_slot(2) == 7"
+						}
+					]
+				},
+				"custom_tier1": {
+					"transitions": [
+						{
+							"leggings": "!query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_1')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 1"
+					]
+				},
+				"custom_tier2": {
+					"transitions": [
+						{
+							"leggings": "!query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_2')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 2"
+					]
+				},
+				"custom_tier3": {
+					"transitions": [
+						{
+							"leggings": "!query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_3')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 3"
+					]
+				},
+				"custom_tier4": {
+					"transitions": [
+						{
+							"leggings": "!query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_4')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 4"
+					]
+				},
+				"custom_tier5": {
+					"transitions": [
+						{
+							"leggings": "!query.equipped_item_any_tag('slot.armor.legs','runecraft:armor_tier_5')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 5"
+					]
+				},
+				"l_none": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 0"
+					]
+				},
+				"l_2": {
+					"transitions": [
+						{
+							"leggings": "!query.armor_texture_slot(2) == 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 2"
+					]
+				},
+				"l_3": {
+					"transitions": [
+						{
+							"leggings": "query.armor_texture_slot(2) != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 3"
+					]
+				},
+				"l_4": {
+					"transitions": [
+						{
+							"leggings": "query.armor_texture_slot(2) != 1"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 4"
+					]
+				},
+				"l_5": {
+					"transitions": [
+						{
+							"leggings": "query.armor_texture_slot(2) != 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 5"
+					]
+				},
+				"l_6": {
+					"transitions": [
+						{
+							"leggings": "!(query.armor_texture_slot(2) == 3 || query.armor_texture_slot(2) == 7)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s l_av 6"
+					]
+				}
+			}
+		},
+
+		//calculating boot value
+		"controller.animation.boot_value": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"boots": "query.any(query.armor_texture_slot(3),0,1,2,3,4,7) || query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_1') || query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_2') || query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_3') || query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_4') || query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_5')"
+						}
+					]
+				},
+				"boots": {
+					"transitions": [
+						{
+							"custom_tier1": "query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_1')"
+						},
+						{
+							"custom_tier2": "query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_2')"
+						},
+						{
+							"custom_tier3": "query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_3')"
+						},
+						{
+							"custom_tier4": "query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_4')"
+						},
+						{
+							"custom_tier5": "query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_5')"
+						},
+						{
+							"b_none": "query.armor_texture_slot(3) == -1"
+						},
+						{
+							"b_1": "query.any(query.armor_texture_slot(3),0,1,4)"
+						},
+						{
+							"b_2": "query.armor_texture_slot(3) == 2"
+						},
+						{
+							"b_3": "query.armor_texture_slot(3) == 3 || query.armor_texture_slot(3) == 7"
+						}
+					]
+				},
+				"custom_tier1": {
+					"transitions": [
+						{
+							"boots": "!query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_1')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 1"
+					]
+				},
+				"custom_tier2": {
+					"transitions": [
+						{
+							"boots": "!query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_2')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 2"
+					]
+				},
+				"custom_tier3": {
+					"transitions": [
+						{
+							"boots": "!query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_3')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 3"
+					]
+				},
+				"custom_tier4": {
+					"transitions": [
+						{
+							"boots": "!query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_4')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 4"
+					]
+				},
+				"custom_tier5": {
+					"transitions": [
+						{
+							"boots": "!query.equipped_item_any_tag('slot.armor.feet','runecraft:armor_tier_5')"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 5"
+					]
+				},
+				"b_none": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 0"
+					]
+				},
+				"b_1": {
+					"transitions": [
+						{
+							"boots": "!query.any(query.armor_texture_slot(3),0,1,4)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 1"
+					]
+				},
+				"b_2": {
+					"transitions": [
+						{
+							"boots": "query.armor_texture_slot(3) != 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 2"
+					]
+				},
+				"b_3": {
+					"transitions": [
+						{
+							"boots": "!(query.armor_texture_slot(3) == 3 || query.armor_texture_slot(3) == 7)"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s b_av 3"
+					]
+				}
+			}
+		},
+
+		//stamina text value
+		"controller.animation.stamina_text": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"0": "math.round(query.scoreboard('stamina_main')/10) <= 0"
+						},
+						{
+							"1": "math.round(query.scoreboard('stamina_main')/10) == 1"
+						},
+						{
+							"2": "math.round(query.scoreboard('stamina_main')/10) == 2"
+						},
+						{
+							"3": "math.round(query.scoreboard('stamina_main')/10) == 3"
+						},
+						{
+							"4": "math.round(query.scoreboard('stamina_main')/10) == 4"
+						},
+						{
+							"5": "math.round(query.scoreboard('stamina_main')/10) == 5"
+						},
+						{
+							"6": "math.round(query.scoreboard('stamina_main')/10) == 6"
+						},
+						{
+							"7": "math.round(query.scoreboard('stamina_main')/10) == 7"
+						},
+						{
+							"8": "math.round(query.scoreboard('stamina_main')/10) == 8"
+						},
+						{
+							"9": "math.round(query.scoreboard('stamina_main')/10)== 9"
+						},
+						{
+							"10": "math.round(query.scoreboard('stamina_main')/10)== 10"
+						},
+						{
+							"11": "math.round(query.scoreboard('stamina_main')/10)== 11"
+						},
+						{
+							"12": "math.round(query.scoreboard('stamina_main')/10)== 12"
+						},
+						{
+							"13": "math.round(query.scoreboard('stamina_main')/10)== 13"
+						},
+						{
+							"14": "math.round(query.scoreboard('stamina_main')/10)== 14"
+						},
+						{
+							"15": "math.round(query.scoreboard('stamina_main')/10)== 15"
+						},
+						{
+							"16": "math.round(query.scoreboard('stamina_main')/10)== 16"
+						},
+						{
+							"17": "math.round(query.scoreboard('stamina_main')/10)== 17"
+						},
+						{
+							"18": "math.round(query.scoreboard('stamina_main')/10)== 18"
+						},
+						{
+							"19": "math.round(query.scoreboard('stamina_main')/10)== 19"
+						},
+						{
+							"20": "math.round(query.scoreboard('stamina_main')/10)== 20"
+						},
+						{
+							"21": "math.round(query.scoreboard('stamina_main')/10)== 21"
+						},
+						{
+							"22": "math.round(query.scoreboard('stamina_main')/10)== 22"
+						},
+						{
+							"23": "math.round(query.scoreboard('stamina_main')/10)== 23"
+						},
+						{
+							"24": "math.round(query.scoreboard('stamina_main')/10)== 24"
+						},
+						{
+							"25": "math.round(query.scoreboard('stamina_main')/10)== 25"
+						},
+						{
+							"26": "math.round(query.scoreboard('stamina_main')/10)== 26"
+						},
+						{
+							"27": "math.round(query.scoreboard('stamina_main')/10)== 27"
+						},
+						{
+							"28": "math.round(query.scoreboard('stamina_main')/10)== 28"
+						},
+						{
+							"29": "math.round(query.scoreboard('stamina_main')/10)== 29"
+						},
+						{
+							"30": "math.round(query.scoreboard('stamina_main')/10)== 30"
+						},
+						{
+							"31": "math.round(query.scoreboard('stamina_main')/10)== 31"
+						},
+						{
+							"32": "math.round(query.scoreboard('stamina_main')/10)== 32"
+						},
+						{
+							"33": "math.round(query.scoreboard('stamina_main')/10)== 33"
+						},
+						{
+							"34": "math.round(query.scoreboard('stamina_main')/10)== 34"
+						},
+						{
+							"35": "math.round(query.scoreboard('stamina_main')/10)== 35"
+						},
+						{
+							"36": "math.round(query.scoreboard('stamina_main')/10)== 36"
+						},
+						{
+							"37": "math.round(query.scoreboard('stamina_main')/10)== 37"
+						},
+						{
+							"38": "math.round(query.scoreboard('stamina_main')/10)== 38"
+						},
+						{
+							"39": "math.round(query.scoreboard('stamina_main')/10)== 39"
+						},
+						{
+							"40": "math.round(query.scoreboard('stamina_main')/10)== 40"
+						},
+						{
+							"41": "math.round(query.scoreboard('stamina_main')/10)== 41"
+						},
+						{
+							"42": "math.round(query.scoreboard('stamina_main')/10)== 42"
+						},
+						{
+							"43": "math.round(query.scoreboard('stamina_main')/10)== 43"
+						},
+						{
+							"44": "math.round(query.scoreboard('stamina_main')/10)== 44"
+						},
+						{
+							"45": "math.round(query.scoreboard('stamina_main')/10)== 45"
+						},
+						{
+							"46": "math.round(query.scoreboard('stamina_main')/10)== 46"
+						},
+						{
+							"47": "math.round(query.scoreboard('stamina_main')/10)== 47"
+						},
+						{
+							"48": "math.round(query.scoreboard('stamina_main')/10)== 48"
+						},
+						{
+							"49": "math.round(query.scoreboard('stamina_main')/10)== 49"
+						},
+						{
+							"50": "math.round(query.scoreboard('stamina_main')/10)== 50"
+						},
+						{
+							"51": "math.round(query.scoreboard('stamina_main')/10)== 51"
+						},
+						{
+							"52": "math.round(query.scoreboard('stamina_main')/10)== 52"
+						},
+						{
+							"53": "math.round(query.scoreboard('stamina_main')/10)== 53"
+						},
+						{
+							"54": "math.round(query.scoreboard('stamina_main')/10)== 54"
+						},
+						{
+							"55": "math.round(query.scoreboard('stamina_main')/10)== 55"
+						},
+						{
+							"56": "math.round(query.scoreboard('stamina_main')/10)== 56"
+						},
+						{
+							"57": "math.round(query.scoreboard('stamina_main')/10)== 57"
+						},
+						{
+							"58": "math.round(query.scoreboard('stamina_main')/10)== 58"
+						},
+						{
+							"59": "math.round(query.scoreboard('stamina_main')/10)== 59"
+						},
+						{
+							"60": "math.round(query.scoreboard('stamina_main')/10)== 60"
+						},
+						{
+							"61": "math.round(query.scoreboard('stamina_main')/10)== 61"
+						},
+						{
+							"62": "math.round(query.scoreboard('stamina_main')/10)== 62"
+						},
+						{
+							"63": "math.round(query.scoreboard('stamina_main')/10)== 63"
+						},
+						{
+							"64": "math.round(query.scoreboard('stamina_main')/10)== 64"
+						},
+						{
+							"65": "math.round(query.scoreboard('stamina_main')/10)== 65"
+						},
+						{
+							"66": "math.round(query.scoreboard('stamina_main')/10)== 66"
+						},
+						{
+							"67": "math.round(query.scoreboard('stamina_main')/10)== 67"
+						},
+						{
+							"68": "math.round(query.scoreboard('stamina_main')/10)== 68"
+						},
+						{
+							"69": "math.round(query.scoreboard('stamina_main')/10)== 69"
+						},
+						{
+							"70": "math.round(query.scoreboard('stamina_main')/10)== 70"
+						},
+						{
+							"71": "math.round(query.scoreboard('stamina_main')/10)== 71"
+						},
+						{
+							"72": "math.round(query.scoreboard('stamina_main')/10)== 72"
+						},
+						{
+							"73": "math.round(query.scoreboard('stamina_main')/10)== 73"
+						},
+						{
+							"74": "math.round(query.scoreboard('stamina_main')/10)== 74"
+						},
+						{
+							"75": "math.round(query.scoreboard('stamina_main')/10)== 75"
+						},
+						{
+							"76": "math.round(query.scoreboard('stamina_main')/10)== 76"
+						},
+						{
+							"77": "math.round(query.scoreboard('stamina_main')/10)== 77"
+						},
+						{
+							"78": "math.round(query.scoreboard('stamina_main')/10)== 78"
+						},
+						{
+							"79": "math.round(query.scoreboard('stamina_main')/10)== 79"
+						},
+						{
+							"80": "math.round(query.scoreboard('stamina_main')/10)== 80"
+						},
+						{
+							"81": "math.round(query.scoreboard('stamina_main')/10)== 81"
+						},
+						{
+							"82": "math.round(query.scoreboard('stamina_main')/10)== 82"
+						},
+						{
+							"83": "math.round(query.scoreboard('stamina_main')/10)== 83"
+						},
+						{
+							"84": "math.round(query.scoreboard('stamina_main')/10)== 84"
+						},
+						{
+							"85": "math.round(query.scoreboard('stamina_main')/10)== 85"
+						},
+						{
+							"86": "math.round(query.scoreboard('stamina_main')/10)== 86"
+						},
+						{
+							"87": "math.round(query.scoreboard('stamina_main')/10)== 87"
+						},
+						{
+							"88": "math.round(query.scoreboard('stamina_main')/10)== 88"
+						},
+						{
+							"89": "math.round(query.scoreboard('stamina_main')/10)== 89"
+						},
+						{
+							"90": "math.round(query.scoreboard('stamina_main')/10)== 90"
+						},
+						{
+							"91": "math.round(query.scoreboard('stamina_main')/10)== 91"
+						},
+						{
+							"92": "math.round(query.scoreboard('stamina_main')/10)== 92"
+						},
+						{
+							"93": "math.round(query.scoreboard('stamina_main')/10)== 93"
+						},
+						{
+							"94": "math.round(query.scoreboard('stamina_main')/10)== 94"
+						},
+						{
+							"95": "math.round(query.scoreboard('stamina_main')/10)== 95"
+						},
+						{
+							"96": "math.round(query.scoreboard('stamina_main')/10)== 96"
+						},
+						{
+							"97": "math.round(query.scoreboard('stamina_main')/10)== 97"
+						},
+						{
+							"98": "math.round(query.scoreboard('stamina_main')/10)== 98"
+						},
+						{
+							"99": "math.round(query.scoreboard('stamina_main')/10)== 99"
+						},
+						{
+							"100": "math.round(query.scoreboard('stamina_main')/10)>= 100"
+						}
+					]
+				},
+				"0": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)> 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 0"
+					]
+				},
+				"1": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 1"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 1"
+					]
+				},
+				"2": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 2"
+					]
+				},
+				"3": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 3"
+					]
+				},
+				"4": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 4"
+					]
+				},
+				"5": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 5"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 5"
+					]
+				},
+				"6": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 6"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 6"
+					]
+				},
+				"7": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 7"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 7"
+					]
+				},
+				"8": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 8"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 8"
+					]
+				},
+				"9": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 9"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 9"
+					]
+				},
+				"10": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 10"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 10"
+					]
+				},
+				"11": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 11"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 11"
+					]
+				},
+				"12": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 12"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 12"
+					]
+				},
+				"13": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 13"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 13"
+					]
+				},
+				"14": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 14"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 14"
+					]
+				},
+				"15": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 15"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 15"
+					]
+				},
+				"16": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 16"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 16"
+					]
+				},
+				"17": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 17"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 17"
+					]
+				},
+				"18": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 18"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 18"
+					]
+				},
+				"19": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 19"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 19"
+					]
+				},
+				"20": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 20"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 20"
+					]
+				},
+				"21": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 21"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 21"
+					]
+				},
+				"22": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 22"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 22"
+					]
+				},
+				"23": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 23"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 23"
+					]
+				},
+				"24": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 24"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 24"
+					]
+				},
+				"25": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 25"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 25"
+					]
+				},
+				"26": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 26"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 26"
+					]
+				},
+				"27": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 27"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 27"
+					]
+				},
+				"28": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 28"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 28"
+					]
+				},
+				"29": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 29"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 29"
+					]
+				},
+				"30": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 30"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 30"
+					]
+				},
+				"31": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 31"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 31"
+					]
+				},
+				"32": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 32"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 32"
+					]
+				},
+				"33": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 33"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 33"
+					]
+				},
+				"34": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 34"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 34"
+					]
+				},
+				"35": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 35"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 35"
+					]
+				},
+				"36": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 36"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 36"
+					]
+				},
+				"37": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 37"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 37"
+					]
+				},
+				"38": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 38"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 38"
+					]
+				},
+				"39": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 39"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 39"
+					]
+				},
+				"40": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 40"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 40"
+					]
+				},
+				"41": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 41"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 41"
+					]
+				},
+				"42": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 42"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 42"
+					]
+				},
+				"43": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 43"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 43"
+					]
+				},
+				"44": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 44"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 44"
+					]
+				},
+				"45": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 45"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 45"
+					]
+				},
+				"46": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 46"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 46"
+					]
+				},
+				"47": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 47"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 47"
+					]
+				},
+				"48": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 48"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 48"
+					]
+				},
+				"49": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 49"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 49"
+					]
+				},
+				"50": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 50"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 50"
+					]
+				},
+				"51": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 51"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 51"
+					]
+				},
+				"52": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 52"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 52"
+					]
+				},
+				"53": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 53"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 53"
+					]
+				},
+				"54": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 54"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 54"
+					]
+				},
+				"55": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 55"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 55"
+					]
+				},
+				"56": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 56"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 56"
+					]
+				},
+				"57": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 57"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 57"
+					]
+				},
+				"58": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 58"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 58"
+					]
+				},
+				"59": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 59"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 59"
+					]
+				},
+				"60": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 60"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 60"
+					]
+				},
+				"61": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 61"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 61"
+					]
+				},
+				"62": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 62"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 62"
+					]
+				},
+				"63": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 63"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 63"
+					]
+				},
+				"64": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 64"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 64"
+					]
+				},
+				"65": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 65"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 65"
+					]
+				},
+				"66": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 66"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 66"
+					]
+				},
+				"67": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 67"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 67"
+					]
+				},
+				"68": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 68"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 68"
+					]
+				},
+				"69": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 69"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 696="
+					]
+				},
+				"70": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 70"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 70"
+					]
+				},
+				"71": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 71"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 71"
+					]
+				},
+				"72": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 72"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 72"
+					]
+				},
+				"73": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 73"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 73"
+					]
+				},
+				"74": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 74"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 74"
+					]
+				},
+				"75": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 75"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 75"
+					]
+				},
+				"76": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 76"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 76"
+					]
+				},
+				"77": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 77"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 77"
+					]
+				},
+				"78": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 78"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 78"
+					]
+				},
+				"79": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 79"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 79"
+					]
+				},
+				"80": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 80"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 80"
+					]
+				},
+				"81": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 81"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 81"
+					]
+				},
+				"82": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 82"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 82"
+					]
+				},
+				"83": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 83"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 83"
+					]
+				},
+				"84": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 84"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 84"
+					]
+				},
+				"85": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 85"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 85"
+					]
+				},
+				"86": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 86"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 86"
+					]
+				},
+				"87": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 87"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 87"
+					]
+				},
+				"88": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 88"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 88"
+					]
+				},
+				"89": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 89"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 89"
+					]
+				},
+				"90": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 90"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 90"
+					]
+				},
+				"91": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 91"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 91"
+					]
+				},
+				"92": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 92"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 92"
+					]
+				},
+				"93": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 93"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 93"
+					]
+				},
+				"94": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 94"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 94"
+					]
+				},
+				"95": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 95"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 95"
+					]
+				},
+				"96": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 96"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 96"
+					]
+				},
+				"97": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 97"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 97"
+					]
+				},
+				"98": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 98"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 98"
+					]
+				},
+				"99": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)!= 99"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 99"
+					]
+				},
+				"100": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)< 100"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_text 100"
+					]
+				}
+			}
+		},
+
+		//calculating stamina %
+		"controller.animation.stamina_setter": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"1s": "math.round(query.scoreboard('stamina_main')/10)>= 100 && query.is_sprinting"
+						},
+						{
+							"2s": "query.in_range(query.scoreboard('stamina_main')/10,96,99) && query.is_sprinting"
+						},
+						{
+							"3s": "query.in_range(query.scoreboard('stamina_main')/10,91,95) && query.is_sprinting"
+						},
+						{
+							"4s": "query.in_range(query.scoreboard('stamina_main')/10,85,90) && query.is_sprinting"
+						},
+						{
+							"5s": "query.in_range(query.scoreboard('stamina_main')/10,80,84) && query.is_sprinting"
+						},
+						{
+							"6s": "query.in_range(query.scoreboard('stamina_main')/10,75,79) && query.is_sprinting"
+						},
+						{
+							"7s": "query.in_range(query.scoreboard('stamina_main')/10,69,74) && query.is_sprinting"
+						},
+						{
+							"8s": "query.in_range(query.scoreboard('stamina_main')/10,64,68) && query.is_sprinting"
+						},
+						{
+							"9s": "query.in_range(query.scoreboard('stamina_main')/10,59,63) && query.is_sprinting"
+						},
+						{
+							"10s": "query.in_range(query.scoreboard('stamina_main')/10,53,58) && query.is_sprinting"
+						},
+						{
+							"11s": "query.in_range(query.scoreboard('stamina_main')/10,48,52) && query.is_sprinting"
+						},
+						{
+							"12s": "query.in_range(query.scoreboard('stamina_main')/10,43,47) && query.is_sprinting"
+						},
+						{
+							"13s": "query.in_range(query.scoreboard('stamina_main')/10,38,42) && query.is_sprinting"
+						},
+						{
+							"14s": "query.in_range(query.scoreboard('stamina_main')/10,33,37) && query.is_sprinting"
+						},
+						{
+							"15s": "query.in_range(query.scoreboard('stamina_main')/10,27,32) && query.is_sprinting"
+						},
+						{
+							"16s": "query.in_range(query.scoreboard('stamina_main')/10,22,26) && query.is_sprinting"
+						},
+						{
+							"17s": "query.in_range(query.scoreboard('stamina_main')/10,17,21) && query.is_sprinting"
+						},
+						{
+							"18s": "query.in_range(query.scoreboard('stamina_main')/10,11,16) && query.is_sprinting"
+						},
+						{
+							"19s": "query.in_range(query.scoreboard('stamina_main')/10,6,10) && query.is_sprinting"
+						},
+						{
+							"20s": "query.in_range(query.scoreboard('stamina_main')/10,1,5) && query.is_sprinting"
+						},
+						{
+							"1n": "math.round(query.scoreboard('stamina_main')/10)>= 100 && !query.is_sprinting"
+						},
+						{
+							"2n": "query.in_range(query.scoreboard('stamina_main')/10,96,99) && !query.is_sprinting"
+						},
+						{
+							"3n": "query.in_range(query.scoreboard('stamina_main')/10,91,95) && !query.is_sprinting"
+						},
+						{
+							"4n": "query.in_range(query.scoreboard('stamina_main')/10,85,90) && !query.is_sprinting"
+						},
+						{
+							"5n": "query.in_range(query.scoreboard('stamina_main')/10,80,84) && !query.is_sprinting"
+						},
+						{
+							"6n": "query.in_range(query.scoreboard('stamina_main')/10,75,79) && !query.is_sprinting"
+						},
+						{
+							"7n": "query.in_range(query.scoreboard('stamina_main')/10,69,74) && !query.is_sprinting"
+						},
+						{
+							"8n": "query.in_range(query.scoreboard('stamina_main')/10,64,68) && !query.is_sprinting"
+						},
+						{
+							"9n": "query.in_range(query.scoreboard('stamina_main')/10,59,63) && !query.is_sprinting"
+						},
+						{
+							"10n": "query.in_range(query.scoreboard('stamina_main')/10,53,58) && !query.is_sprinting"
+						},
+						{
+							"11n": "query.in_range(query.scoreboard('stamina_main')/10,48,52) && !query.is_sprinting"
+						},
+						{
+							"12n": "query.in_range(query.scoreboard('stamina_main')/10,43,47) && !query.is_sprinting"
+						},
+						{
+							"13n": "query.in_range(query.scoreboard('stamina_main')/10,38,42) && !query.is_sprinting"
+						},
+						{
+							"14n": "query.in_range(query.scoreboard('stamina_main')/10,33,37) && !query.is_sprinting"
+						},
+						{
+							"15n": "query.in_range(query.scoreboard('stamina_main')/10,27,32) && !query.is_sprinting"
+						},
+						{
+							"16n": "query.in_range(query.scoreboard('stamina_main')/10,22,26) && !query.is_sprinting"
+						},
+						{
+							"17n": "query.in_range(query.scoreboard('stamina_main')/10,17,21) && !query.is_sprinting"
+						},
+						{
+							"18n": "query.in_range(query.scoreboard('stamina_main')/10,11,16) && !query.is_sprinting"
+						},
+						{
+							"19n": "query.in_range(query.scoreboard('stamina_main')/10,6,10) && !query.is_sprinting"
+						},
+						{
+							"20n": "query.in_range(query.scoreboard('stamina_main')/10,1,5) && !query.is_sprinting"
+						},
+						{
+							"41": "math.round(query.scoreboard('stamina_main')/10)<=  0 && query.is_sprinting"
+						},
+						{
+							"0": "math.round(query.scoreboard('stamina_main')/10)<= 0 && !query.is_sprinting"
+						}
+					]
+				},
+				"1s": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)< 100 || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 1"
+					]
+				},
+				"2s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,96,99) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 2"
+					]
+				},
+				"3s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,91,95) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 3"
+					]
+				},
+				"4s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,85,90) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 4"
+					]
+				},
+				"5s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,80,84) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 5"
+					]
+				},
+				"6s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,75,79) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 6"
+					]
+				},
+				"7s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,69,74) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 7"
+					]
+				},
+				"8s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,64,68) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 8"
+					]
+				},
+				"9s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,59,63) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 9"
+					]
+				},
+				"10s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,53,58) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 10"
+					]
+				},
+				"11s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,48,52) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 11"
+					]
+				},
+				"12s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,43,47) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 12"
+					]
+				},
+				"13s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,38,42) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 13"
+					]
+				},
+				"14s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,33,37) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 14"
+					]
+				},
+				"15s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,27,32) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 15"
+					]
+				},
+				"16s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,22,26) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 16"
+					]
+				},
+				"17s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,17,21) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 17"
+					]
+				},
+				"18s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,11,16) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 18"
+					]
+				},
+				"19s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,6,10) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 19"
+					]
+				},
+				"20s": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,1,5) || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 20"
+					]
+				},
+				"1n": {
+					"transitions": [
+						{
+							"default": "!math.round(query.scoreboard('stamina_main')/10)>= 100 || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 21"
+					]
+				},
+				"2n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,96,99) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 22"
+					]
+				},
+				"3n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,91,95) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 23"
+					]
+				},
+				"4n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,85,90) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 24"
+					]
+				},
+				"5n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,80,84) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 25"
+					]
+				},
+				"6n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,75,79) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 26"
+					]
+				},
+				"7n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,69,74) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 27"
+					]
+				},
+				"8n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,64,68) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 28"
+					]
+				},
+				"9n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,59,63) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 29"
+					]
+				},
+				"10n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,53,58) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 30"
+					]
+				},
+				"11n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,48,52) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 31"
+					]
+				},
+				"12n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,43,47) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 32"
+					]
+				},
+				"13n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,38,42) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 33"
+					]
+				},
+				"14n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,33,37) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 34"
+					]
+				},
+				"15n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,27,32) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 35"
+					]
+				},
+				"16n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,22,26) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 36"
+					]
+				},
+				"17n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,17,21) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 37"
+					]
+				},
+				"18n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,11,16) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 38"
+					]
+				},
+				"19n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,6,10) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 39"
+					]
+				},
+				"20n": {
+					"transitions": [
+						{
+							"default": "!query.in_range(query.scoreboard('stamina_main')/10,1,5) || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 40"
+					]
+				},
+				"41": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)> 0 || !query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 41"
+					]
+				},
+				"0": {
+					"transitions": [
+						{
+							"default": "math.round(query.scoreboard('stamina_main')/10)> 0 || query.is_sprinting"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_hud 0"
+					]
+				}
+			}
+		}
+	}
+}

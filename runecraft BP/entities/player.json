@@ -1,0 +1,796 @@
+{
+  "format_version": "1.16.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "properties": {
+        //thieving
+        "runecraft:invisible": {
+          "values": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "runecraft:bonus_steal": {
+          "values": {
+            "min": 0,
+            "max": 100
+          }
+        },
+        "runecraft:success_chance": {
+          "values": {
+            "min": 0,
+            "max": 100
+          }
+        },
+        //end thieving
+        "runecraft:elytra_equipped": {
+          "client_sync": true,
+          "values": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "runecraft:agility_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:defense_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:constitution_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:prayer_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:ranged_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:thieving_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:attack_level": {
+          "client_sync": true,
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        },
+        "runecraft:smithing_level": {
+          "values": {
+            "min": 1,
+            "max": 120
+          }
+        }
+      },
+      "scripts": {
+        "animate": [
+          //general initialization
+          "initialize",
+          //agility
+          "agility_items",
+          "agility_xp_from_sprint",
+          "agility_xp_from_fall",
+          "agility_level_up",
+          //stamina system
+          "stamina_system_controller",
+          "stamina_drain",
+          "stamina_drain_skillcape",
+          "animation_stamina_gain_walk_full_grace",
+          "animation_stamina_gain_walk_three_grace",
+          "animation_stamina_gain_walk_two_grace",
+          "animation_stamina_gain_walk_one_grace",
+          "stamina_gain_walking_n",
+          "animation_stamina_gain_sneak_full_grace",
+          "animation_stamina_gain_sneak_three_grace",
+          "animation_stamina_gain_sneak_two_grace",
+          "animation_stamina_gain_sneak_one_grace",
+          "stamina_gain_sneaking_n",
+          "animation_stamina_gain_standing_full_grace",
+          "animation_stamina_gain_standing_three_grace",
+          "animation_stamina_gain_standing_two_grace",
+          "animation_stamina_gain_standing_one_grace",
+          "stamina_gain_standing_n",
+          //HUD DISPLAYS
+          //hitpoints
+          "hp_setter",
+          "hp_text",
+          //armor
+          "total_armor",
+          "helmet_value",
+          "chestplate_value",
+          "legging_value",
+          "boot_value",
+          //stamina
+          "stamina_setter",
+          "stamina_text",
+          //thieving
+          "controller_set_bonus",
+          "controller_head_bonus",
+          "controller_top_bonus",
+          "controller_leg_bonus",
+          "controller_boot_bonus",
+          {
+            "animation_player_cd": "query.scoreboard('player_cd') > 0"
+          },
+          "thieving_process",
+          "range_check",
+          "thieving_level_up",
+          //constitution
+          "constitution_level_up",
+          //attack
+          "attack_level_up",
+          //defense
+          "defense_level_up",
+          //ranged
+          "ranged_level_up"
+        ]
+      },
+      "animations": {
+        //general initialization
+        "initialize": "controller.animation.player.initialize",
+        //agility
+        "agility_items": "controller.animation.agility_items",
+        "agility_xp_from_sprint": "controller.animation.player.agility_xp_from_sprint",
+        "agility_xp_from_fall": "controller.animation.player.agility_xp_from_falling",
+        "agility_level_up": "controller.animation.player.agility_level_up",
+        //stamina system
+        "stamina_system_controller": "controller.animation.stamina_system",
+        "stamina_drain": "animation.stamina_drain",
+        "stamina_drain_skillcape": "animation.stamina_drain_skillcape",
+        "animation_stamina_gain_walk_full_grace": "animation.stamina_gain_walk_full_grace",
+        "animation_stamina_gain_walk_three_grace": "animation.stamina_gain_walk_three_grace",
+        "animation_stamina_gain_walk_two_grace": "animation.stamina_gain_walk_two_grace",
+        "animation_stamina_gain_walk_one_grace": "animation.stamina_gain_walk_one_grace",
+        "stamina_gain_walking_n": "animation.stamina_gain_walking_n",
+        "animation_stamina_gain_sneak_full_grace": "animation.stamina_gain_sneak_full_grace",
+        "animation_stamina_gain_sneak_three_grace": "animation.stamina_gain_sneak_three_grace",
+        "animation_stamina_gain_sneak_two_grace": "animation.stamina_gain_sneak_two_grace",
+        "animation_stamina_gain_sneak_one_grace": "animation.stamina_gain_sneak_one_grace",
+        "stamina_gain_sneaking_n": "animation.stamina_gain_sneaking_n",
+        "animation_stamina_gain_standing_full_grace": "animation.stamina_gain_standing_full_grace",
+        "animation_stamina_gain_standing_three_grace": "animation.stamina_gain_standing_three_grace",
+        "animation_stamina_gain_standing_two_grace": "animation.stamina_gain_standing_two_grace",
+        "animation_stamina_gain_standing_one_grace": "animation.stamina_gain_standing_one_grace",
+        "stamina_gain_standing_n": "animation.stamina_gain_standing_n",
+        //HUD DISPLAYS
+        //hitpoints
+        "hp_setter": "controller.animation.hp_setter",
+        "hp_text": "controller.animation.hp_text",
+        //armor
+        "total_armor": "controller.animation.total_armor",
+        "helmet_value": "controller.animation.helmet_value",
+        "chestplate_value": "controller.animation.chestplate_value",
+        "legging_value": "controller.animation.legging_value",
+        "boot_value": "controller.animation.boot_value",
+        //stamina
+        "stamina_setter": "controller.animation.stamina_setter",
+        "stamina_text": "controller.animation.stamina_text",
+        //thieving
+        "controller_set_bonus": "controller.animation.player.thiev_set_bonus",
+        "controller_head_bonus": "controller.animation.player.thiev_head_bonus",
+        "controller_top_bonus": "controller.animation.player.thiev_top_bonus",
+        "controller_leg_bonus": "controller.animation.player.thiev_leg_bonus",
+        "controller_boot_bonus": "controller.animation.player.thiev_boot_bonus",
+        "animation_player_cd": "animation.player_cd",
+        "thieving_process": "controller.animation.player.thieving_process",
+        "range_check": "animation.thieving_range_checks",
+        "thieving_level_up": "controller.animation.player.thieving_level_up",
+        //constitution
+        "constitution_level_up": "controller.animation.player.constitution_level_up",
+        //attack
+        "attack_level_up": "controller.animation.player.attack_level_up",
+        //defense
+        "defense_level_up": "controller.animation.player.defense_level_up",
+        //ranged
+        "ranged_level_up": "controller.animation.player.ranged_level_up"
+      }
+    },
+    "component_groups": {
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.0,
+            0.0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 3.0
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 0,
+        "jump": 0,
+        "sprint_jump": 0,
+        "mine": 0,
+        "attack": 0,
+        "damage": 0,
+        "walk": 0,
+        "sprint": 0,
+        "swim": 0
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "invisibility"
+            },
+            "event": "runecraft:invisible"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "invisibility"
+            },
+            "event": "runecraft:no_invisible"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "poison"
+            },
+            "event": "runecraft:poisoned"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "wither"
+            },
+            "event": "runecraft:withered"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "fatal_poison"
+            },
+            "event": "runecraft:fatal_poisoned"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "absorption"
+            },
+            "event": "runecraft:absorption"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "absorption"
+            },
+            "event": "runecraft:no_effects1"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "poison"
+            },
+            "event": "runecraft:no_effects2"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "fatal_poison"
+            },
+            "event": "runecraft:no_effects3"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "wither"
+            },
+            "event": "runecraft:no_effects4"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "value": "speed"
+            },
+            "event": "runecraft:speed"
+          },
+          {
+            "filters": {
+              "test": "has_mob_effect",
+              "subject": "self",
+              "operator": "!=",
+              "value": "speed"
+            },
+            "event": "runecraft:no_speed"
+          },
+          {
+            "filters": {
+              "test": "has_equipment",
+              "domain": "armor",
+              "subject": "self",
+              "operator": "==",
+              "value": "minecraft:elytra"
+            },
+            "event": "runecraft:elytra_equipped"
+          },
+          {
+            "filters": {
+              "test": "has_equipment",
+              "domain": "armor",
+              "subject": "self",
+              "operator": "!=",
+              "value": "minecraft:elytra"
+            },
+            "event": "runecraft:elytra_unequipped"
+          }
+        ]
+      }
+    },
+    "events": {
+      //start combat events
+      "runecraft:shooter": {
+        "run_command": {
+          "command": [
+            "tag @s add shooter",
+            "say shooter"
+          ]
+        }
+      },
+      "runecraft:attacker": {
+        "run_command": {
+          "command": [
+            "tag @s add attacker",
+            "say attacker"
+          ]
+        }
+      },
+      //end combat events
+      //start thieving events
+      "runecraft:invisible": {
+        "set_actor_property": {
+          "runecraft:invisible": "1"
+        }
+      },
+      "runecraft:no_invisible": {
+        "set_actor_property": {
+          "runecraft:invisible": "0"
+        }
+      },
+      "runecraft:add_bonus": {
+        "set_actor_property": {
+          "runecraft:bonus_steal": "query.actor_property('runecraft:bonus_steal') + 20"
+        }
+      },
+      "runecraft:remove_bonus": {
+        "set_actor_property": {
+          "runecraft:bonus_steal": "query.actor_property('runecraft:bonus_steal') - 20"
+        }
+      },
+      "runecraft:is_baby": {
+        "run_command": {
+          "command": [
+            "tellraw @s {\"rawtext\": [{\"text\": \"§o§eDon't steal from babies!\" }]}"
+          ]
+        }
+      },
+      "runecraft:success_chance": {
+        "set_actor_property": {
+          "runecraft:success_chance": "math.random(1,100)"
+        }
+      },
+      "runecraft:success_chance_invis": {
+        "set_actor_property": {
+          "runecraft:success_chance": "math.random(1,100) + 10"
+        }
+      },
+      "runecraft:success_chance_skillcape": {
+        "set_actor_property": {
+          "runecraft:success_chance": "math.random(1,100) + 15"
+        }
+      },
+      "runecraft:success_chance_both": {
+        "set_actor_property": {
+          "runecraft:success_chance": "math.random(1,100) + 25"
+        }
+      },
+      "runecraft:get_stats": {
+        "run_command": {
+          "command": [
+            "scoreboard players operation @s entity_cd = @e[tag=stat_transfer,c=1] entity_cd",
+            "scoreboard players operation @s entity_type = @e[tag=stat_transfer,c=1] entity_type",
+            "scoreboard players operation @s entity_xp = @e[tag=stat_transfer,c=1] entity_xp",
+            "tag @e[tag=stat_transfer,c=1] add pickpocket",
+            "tag @e[tag=stat_transfer,c=1] remove stat_transfer",
+            "tag @s add thief",
+            "scoreboard players set @s thieving_start 1"
+          ]
+        }
+      },
+      "runecraft:already_stealing": {
+        "run_command": {
+          "command": [
+            "tellraw @s {\"rawtext\": [{\"text\": \"§o§eYou are already stealing from an entity\" }]}"
+          ]
+        }
+      },
+      //end thieving events
+      //elytra detection
+      "runecraft:elytra_equipped": {
+        "set_actor_property": {
+          "runecraft:elytra_equipped": 1
+        }
+      },
+      "runecraft:elytra_unequipped": {
+        "set_actor_property": {
+          "runecraft:elytra_equipped": 0
+        }
+      },
+      //level trackers for scoreboards -> actor properties
+      "runecraft:agility_level_up": {
+        "set_actor_property": {
+          "runecraft:agility_level": "query.actor_property('runecraft:agility_level') + 1"
+        }
+      },
+      "runecraft:thieving_level_up": {
+        "set_actor_property": {
+          "runecraft:thieving_level": "query.actor_property('runecraft:thieving_level') + 1"
+        }
+      },
+      "runecraft:defense_level_up": {
+        "set_actor_property": {
+          "runecraft:defense_level": "query.actor_property('runecraft:defense_level') + 1"
+        }
+      },
+      "runecraft:ranged_level_up": {
+        "set_actor_property": {
+          "runecraft:ranged_level": "query.actor_property('runecraft:ranged_level') + 1"
+        }
+      },
+      "runecraft:constitution_level_up": {
+        "set_actor_property": {
+          "runecraft:constitution_level": "query.actor_property('runecraft:constitution_level') + 1"
+        }
+      },
+      "runecraft:attack_level_up": {
+        "set_actor_property": {
+          "runecraft:attack_level": "query.actor_property('runecraft:attack_level') + 1"
+        }
+      },
+      "runecraft:prayer_level_up": {
+        "set_actor_property": {
+          "runecraft:prayer_level": "query.actor_property('runecraft:prayer_level') + 1"
+        }
+      },
+      //all HUD changing elements requiring environment sensors to function
+      "runecraft:speed": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={speed=0}] speed 1"
+          ]
+        }
+      },
+      "runecraft:no_speed": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={speed=1}] speed 0"
+          ]
+        }
+      },
+      "runecraft:withered": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=0}] health_effect 4",
+            "scoreboard players set @s[scores={health_effect=3}] health_effect 3"
+          ]
+        }
+      },
+      "runecraft:absorption": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s health_effect 3"
+          ]
+        }
+      },
+      "runecraft:poisoned": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=0}] health_effect 1",
+            "scoreboard players set @s[scores={health_effect=3}] health_effect 3",
+            "scoreboard players set @s[scores={health_effect=4}] health_effect 1"
+          ]
+        }
+      },
+      "runecraft:fatal_poisoned": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=0}] health_effect 2",
+            "scoreboard players set @s[scores={health_effect=3}] health_effect 3",
+            "scoreboard players set @s[scores={health_effect=4}] health_effect 2"
+          ]
+        }
+      },
+      "runecraft:no_effects1": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=3}] health_effect 0"
+          ]
+        }
+      },
+      "runecraft:no_effects2": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=1}] health_effect 0"
+          ]
+        }
+      },
+      "runecraft:no_effects3": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=2}] health_effect 0"
+          ]
+        }
+      },
+      "runecraft:no_effects4": {
+        "run_command": {
+          "command": [
+            "scoreboard players set @s[scores={health_effect=4}] health_effect 0"
+          ]
+        }
+      },
+      //is shot by other player
+      "runecraft:ranged_sequence": {
+        "sequence": [
+          {
+            "trigger": {
+              "event": "runecraft:is_shot",
+              "target": "self"
+            }
+          },
+          {
+            "trigger": {
+              "event": "runecraft:is_ranged",
+              "target": "other"
+            }
+          }
+        ]
+      },
+      //is meleed by other player
+      "runecraft:attack_sequence": {
+        "sequence": [
+          {
+            "trigger": {
+              "event": "runecraft:is_meleed",
+              "target": "self"
+            }
+          },
+          {
+            "trigger": {
+              "event": "runecraft:is_melee",
+              "target": "other"
+            }
+          }
+        ]
+      },
+      //set when a player is hit by a melee from another player
+      "runecraft:is_meleed": {
+        "set_actor_property": {
+          "runecraft:combat_type": 2
+        }
+      },
+      //set when a player is hit by a projectile from another player
+      "runecraft:is_shot": {
+        "set_actor_property": {
+          "runecraft:combat_type": 3
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      }
+    }
+  }
+}

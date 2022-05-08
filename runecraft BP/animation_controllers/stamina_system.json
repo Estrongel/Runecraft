@@ -1,0 +1,326 @@
+//ANIMATION CONTROLLER BY ESTRONGEL
+//SUBSCRIBE https://www.youtube.com/channel/UCZnU2d_P45hy5LHbCQ3xiOA
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.stamina_system": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"stamina_fix": "query.scoreboard('stamina_main') > 1000 || query.scoreboard('stamina_main') < 0"
+						},
+						{
+							"stamina_reset": "query.health == 0.0"
+						},
+						{
+							"stamina_reset_sleeping": "query.is_sleeping && (query.time_of_day <= 0.25 || query.time_of_day >= 0.75)"
+						},
+						{
+							"stamina_drain_master": "query.is_sprinting && query.scoreboard('stamina_main') > 0 && !query.is_gliding"
+						},
+						{
+							"stamina_gain_walking_master": "!query.is_sneaking && query.is_moving && !query.is_sprinting && query.scoreboard('stamina_main') < query.scoreboard('stamina_max')"
+						},
+						{
+							"stamina_gain_sneaking_master": "query.is_sneaking && query.scoreboard('stamina_main') < query.scoreboard('stamina_max')"
+						},
+						{
+							"stamina_gain_standing_master": "query.is_gliding || !query.is_moving && !query.is_sprinting && query.scoreboard('stamina_main') < query.scoreboard('stamina_max')"
+						}
+					]
+				},
+				"stamina_fix": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s[scores={stamina_main=1001..}] stamina_main 1000",
+						"/scoreboard players set @s[scores={stamina_main=..-1}] stamina_main 0"
+					]
+				},
+				"stamina_reset": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_main 1000"
+					]
+				},
+				"stamina_reset1": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s stamina_main 1000",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A7e-*You feel well rested and your stamina has been restored*-\"}]}"
+					]
+				},
+				"stamina_reset_sleeping": {
+					"transitions": [
+						{
+							"stamina_reset1": "query.time_of_day > 0.25 && query.time_of_day < 0.75"
+						},
+						{
+							"default": "!query.is_sleeping"
+						}
+					]
+				},
+				"stamina_drain_master": {
+					"transitions": [
+						{
+							"stamina_drain_skillcape": "q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99"
+						},
+						{
+							"stamina_drain_n": "1.0"
+						}
+					]
+				},
+				"stamina_drain_skillcape": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"stamina_drain_skillcape"
+					]
+				},
+				"stamina_drain_n": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"stamina_drain"
+					]
+				},
+				"stamina_gain_walking_master": {
+					"transitions": [
+						{
+							"stamina_gain_walk_full_graceful": "q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && ((q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_walk_three_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_walk_two_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_walk_one_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && query.scoreboard('agility_level') >= 17) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)"
+						},
+						{
+							"stamina_gain_walk_n": "1.0"
+						}
+					]
+				},
+				"stamina_gain_walk_full_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_walk_full_grace"
+					]
+				},
+				"stamina_gain_walk_three_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_walk_three_grace"
+					]
+				},
+				"stamina_gain_walk_two_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_walk_two_grace"
+					]
+				},
+				"stamina_gain_walk_one_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_walk_one_grace"
+					]
+				},
+				"stamina_gain_walk_n": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"stamina_gain_walking_n"
+					]
+				},
+				"stamina_gain_sneaking_master": {
+					"transitions": [
+						{
+							"stamina_gain_sneak_full_graceful": "q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && ((q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_sneak_three_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_sneak_two_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_sneak_one_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && query.scoreboard('agility_level') >= 17) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)"
+						},
+						{
+							"stamina_gain_sneak_n": "1.0"
+						}
+					]
+				},
+				"stamina_gain_sneak_full_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_sneak_full_grace"
+					]
+				},
+				"stamina_gain_sneak_three_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_sneak_three_grace"
+					]
+				},
+				"stamina_gain_sneak_two_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_sneak_two_grace"
+					]
+				},
+				"stamina_gain_sneak_one_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_sneak_one_grace"
+					]
+				},
+				"stamina_gain_sneak_n": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"stamina_gain_sneaking_n"
+					]
+				},
+				"stamina_gain_standing_master": {
+					"transitions": [
+						{
+							"stamina_gain_standing_full_graceful": "q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && ((q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_standing_three_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_standing_two_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99))"
+						},
+						{
+							"stamina_gain_standing_one_graceful": "(q.equipped_item_any_tag('slot.armor.feet', 'runecraft:graceful_boots') && query.scoreboard('agility_level') >= 17) || (q.equipped_item_any_tag('slot.armor.legs', 'runecraft:graceful_leggings') && query.scoreboard('agility_level') >= 45) || (q.equipped_item_any_tag('slot.armor.chest', 'runecraft:graceful_top') && query.scoreboard('agility_level') >= 59) || (q.equipped_item_any_tag('slot.armor.head', 'runecraft:graceful_hood') && query.scoreboard('agility_level') >= 31) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') >= 99)"
+						},
+						{
+							"stamina_gain_standing_n": "1.0"
+						}
+					]
+				},
+				"stamina_gain_standing_full_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_standing_full_grace"
+					],
+					"on_entry": [
+					]
+				},
+				"stamina_gain_standing_three_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_standing_three_grace"
+					],
+					"on_entry": [
+					]
+				},
+				"stamina_gain_standing_two_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_standing_two_grace"
+					],
+					"on_entry": [
+					]
+				},
+				"stamina_gain_standing_one_graceful": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"animation_stamina_gain_standing_one_grace"
+					],
+					"on_entry": [
+					]
+				},
+				"stamina_gain_standing_n": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"stamina_gain_standing_n"
+					],
+					"on_entry": [
+					]
+				}
+			}
+		}
+	}
+}

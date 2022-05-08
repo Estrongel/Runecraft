@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.thieving_range_checks": {
+			"timeline": {
+				"1.0": [
+					"/execute @e[tag=pickpocket] ~ ~ ~ scoreboard players add @e[tag=thief,r=3] in_range 1",
+					"/playsound random.pop @s"
+				],
+				"2.0": [
+					"/execute @e[tag=pickpocket] ~ ~ ~ scoreboard players add @e[tag=thief,r=3] in_range 1",
+					"/playsound random.pop @s"
+				],
+				"3.0": [
+					"/execute @e[tag=pickpocket] ~ ~ ~ scoreboard players add @e[tag=thief,r=3] in_range 1",
+					"/playsound random.pop @s"
+				]
+			},
+			"animation_length": 3.0
+		},
+		"animation.player_cd": {
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/scoreboard players remove @s player_cd 1"
+				]
+			},
+			"animation_length": 1.0
+		},
+		"animation.entity_cd": {
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/scoreboard players remove @s entity_cd 1"
+				]
+			},
+			"animation_length": 1.0
+		}
+	}
+}

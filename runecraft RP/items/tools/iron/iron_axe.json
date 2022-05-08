@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:iron_axe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "iron_axe",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

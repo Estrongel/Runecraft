@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:steel_hoe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "steel_hoe",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+//ITEM FILE CREATED BY ESTRONGEL
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:bronze_boots_t",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:boots": {},
+            "tag:runecraft:armor_tier_1": {},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.boots"
+            },
+            "minecraft:icon": {
+                "texture": "bronze_boots_t"
+            },
+            "minecraft:display_name": {
+                "value": "\u00A75Bronze Boots (t)\n\u00A7bLevel Requirement:\u00A7a 1\uE108 \n\u00A7bArmor: \u00A7a2"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "armor_feet"
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.feet"
+            },
+            "minecraft:armor": {
+                "protection": 1
+            },
+            "minecraft:durability": {
+                "max_durability": 195,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [    
+							"runecraft:bronze_ingot"
+                            ],
+                            "repair_amount": "query.max_durability/4"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(3) == -1 && !q.equipped_item_any_tag('slot.armor.feet','runecraft:boots')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_iron @s"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

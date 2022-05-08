@@ -1,0 +1,72 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:graceful_hood",
+            "category": "equipment"
+        },
+        "components": {
+			"tag:runecraft:graceful_hood": {},
+            "tag:runecraft:helmet": {},
+            "tag:runecraft:armor_tier_1": {},
+            "minecraft:icon": {
+                "texture": "graceful_hood"
+            },
+            "minecraft:display_name": {
+				"value": "\u00A75Graceful Hood\n\u00A7bLevel Requirement:\u00A7a 31\uE108 \n\u00A7bArmor: \u00A7a1 \n\u00A7bOther Bonuses:\n\u00A76\u00A7oGraceful\u00A7r\u00A76 - 20%%% increased stamina regeneration rate \n\u00A7oFull Set\u00A7r\u00A76 - 20%%% additional stamina regeneration rate"
+			},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.helmet"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 15,
+                "slot": "armor_head"
+            },
+            "minecraft:armor": {
+                "protection": 1
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.head"
+            },
+            "minecraft:durability": {
+                "max_durability": 165,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+			"minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:rabbit_hide",
+							"runecraft:graceful_cape"
+                            ],
+                            "repair_amount": 165
+                    }
+                ]
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(0) == -1 && !q.equipped_item_any_tag('slot.armor.head','runecraft:helmet')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather @s"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

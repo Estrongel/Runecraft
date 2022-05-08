@@ -1,0 +1,70 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:iron_platebody",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:chest": {},
+            "tag:runecraft:armor_tier_3": {},
+            "minecraft:icon": {
+                "texture": "iron_platebody"
+            },
+            "minecraft:display_name": {
+				"value": "\u00A75Iron Platebody\n\u00A7bLevel Requirement:\u00A7a 1\uE108 \n\u00A7bArmor: \u00A7a3"
+			},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.chestplate"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "armor_torso"
+            },
+            "minecraft:armor": {
+                "protection": 3
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.chest"
+            },
+            "minecraft:durability": {
+                "max_durability": 240,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            },
+			"minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [    
+							"runecraft:iron_bar"
+                            ],
+                            "repair_amount": "query.max_durability/4"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(1) == -1 && !q.equipped_item_any_tag('slot.armor.chest','runecraft:chest')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_iron @s"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.skillcape.default": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"cloak": {
+					"rotation": ["-math.lerp(0.0, -126.0, query.cape_flap_amount) - 6.0", 0, 0],
+					"position": [0, "query.get_root_locator_offset('armor_offset.default_neck', 1)", 0]
+				}
+			}
+			/*"particle_effects": {
+				"0.0": [
+					{
+						"effect": "test",
+						"locator": "locator3"
+					}
+				]
+			}*/
+		}
+	}
+}

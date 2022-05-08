@@ -1,0 +1,61 @@
+//ITEM FILE CREATED BY ESTRONGEL
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:defense_skillcape",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:defense_skillcape": {},
+            "tag:runecraft:helmet": {},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.helmet"
+            },
+            "minecraft:icon": {
+                "texture": "defense_skillcape"
+            },
+            "minecraft:display_name": {
+                "value": "\u00A75Defense Skillcape\n\u00A7bLevel Requirement:\u00A7a 99\uE108 \n\u00A7bArmor: \u00A7a5 \n\u00A7bEffects:\n\u00A7e-Resistance\u00A7a 1"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:enchantable": {
+                "value": 30,
+                "slot": "armor_head"
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.head"
+            },
+            "minecraft:armor": {
+                "protection": 5
+            },
+            "minecraft:durability": {
+                "max_durability": 999,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(0) == -1 && !q.equipped_item_any_tag('slot.armor.head','runecraft:helmet')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather @p"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

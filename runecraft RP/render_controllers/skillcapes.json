@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.cloaks": {
+			"arrays": {
+				"geometries": {
+					"Array.geometries": [
+						"geometry.default",
+						"geometry.elytra_equipped"
+					]
+				},
+				"textures": {
+					"Array.textures": [
+						"Texture.default",
+						"Texture.mastery"
+					]
+				}
+			},
+			"geometry": "Array.geometries[query.actor_property('runecraft:elytra_equipped')]",
+			"textures": ["Array.textures[(query.is_item_name_any('slot.armor.head',0,'runecraft:agility_skillcape') && query.actor_property('runecraft:agility_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:constitution_skillcape') && query.actor_property('runecraft:constitution_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:attack_skillcape') && query.actor_property('runecraft:attack_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:defense_skillcape') && query.actor_property('runecraft:defense_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:ranged_skillcape') && query.actor_property('runecraft:ranged_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:thieving_skillcape') && query.actor_property('runecraft:thieving_level') >= 99) || (query.is_item_name_any('slot.armor.head',0,'runecraft:prayer_skillcape') && query.actor_property('runecraft:prayer_level') >= 99)]"],
+			"materials": [
+				{
+					"default": "Material.default"
+				}
+			]
+		}
+	}
+}

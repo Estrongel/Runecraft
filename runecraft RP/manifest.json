@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "RPG-ifying Minecraft, Minescape! 1.18.10+",
+        "name": "Minescape RP DEV 1.18.10+",
+        "uuid": "1f489cab-ddb4-4361-8169-843c0f725935",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 100]
+    },
+    "modules": [
+        {
+        "description": "Support me by subscribing to Estrongel on Youtube, thank you :) ",
+            "type": "resources",
+            "uuid": "8f24a977-13f5-455a-a61d-1389d486916a",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "8f24a977-13f5-455a-a61d-1389d486916a",
+            "version": [1, 0, 0]
+        }
+    ]
+}

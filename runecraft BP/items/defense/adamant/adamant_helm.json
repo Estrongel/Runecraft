@@ -1,0 +1,70 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:adamant_helm",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:helmet": {},
+            "tag:runecraft:armor_tier_1": {},
+            "minecraft:icon": {
+                "texture": "adamant_helm"
+            },
+            "minecraft:display_name": {
+				"value": "\u00A75Adamant Helm\n\u00A7bLevel Requirement:\u00A7a 1\uE108 \n\u00A7bArmor: \u00A7a1"
+			},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.helmet"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "armor_head"
+            },
+            "minecraft:armor": {
+                "protection": 1
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.head"
+            },
+            "minecraft:durability": {
+                "max_durability": 165,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+			"minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [    
+							"runecraft:steel_bar"
+                            ],
+                            "repair_amount": "query.max_durability/4"
+                    }
+                ]
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(0) == -1 && !q.equipped_item_any_tag('slot.armor.head','runecraft:helmet')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_iron @s"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+//ITEM FILE CREATED BY ESTRONGEL
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:mithril_platelegs_t",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:legs": {},
+            "tag:runecraft:armor_tier_2": {},
+            "minecraft:icon": {
+                "texture": "mithril_platelegs_t"
+            },
+            "minecraft:display_name": {
+				"value": "\u00A75Mithril Platelegs (t)\n\u00A7bLevel Requirement:\u00A7a 1\uE108 \n\u00A7bArmor: \u00A7a2"
+			},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.leggings"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:enchantable": {
+                "value": 10,
+                "slot": "armor_legs"
+            },
+            "minecraft:armor": {
+                "protection": 2
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.legs"
+            },
+            "minecraft:durability": {
+                "max_durability": 225,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            },
+			"minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [    
+							"runecraft:mithril_bar"
+                            ],
+                            "repair_amount": "query.max_durability/4"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(2) == -1 && !q.equipped_item_any_tag('slot.armor.legs','runecraft:legs')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_iron @s"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

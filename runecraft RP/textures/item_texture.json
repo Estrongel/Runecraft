@@ -1,0 +1,426 @@
+{
+	"resource_pack-name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"ranged_skillcape": {
+			"textures": "textures/items/skillcapes/ranged_skillcape"
+		},
+		"agility_skillcape": {
+			"textures": "textures/items/skillcapes/agility_skillcape"
+		},
+		"thieving_skillcape": {
+			"textures": "textures/items/skillcapes/thieving_skillcape"
+		},
+		"defense_skillcape": {
+			"textures": "textures/items/skillcapes/defense_skillcape"
+		},
+		"attack_skillcape": {
+			"textures": "textures/items/skillcapes/attack_skillcape"
+		},
+		"prayer_skillcape": {
+			"textures": "textures/items/skillcapes/prayer_skillcape"
+		},
+		"constitution_skillcape": {
+			"textures": "textures/items/skillcapes/constitution_skillcape"
+		},
+		"graceful_boots": {
+			"textures": "textures/items/agility/graceful_boots"
+		},
+		"graceful_leggings": {
+			"textures": "textures/items/agility/graceful_leggings"
+		},
+		"graceful_top": {
+			"textures": "textures/items/agility/graceful_top"
+		},
+		"graceful_hood": {
+			"textures": "textures/items/agility/graceful_hood"
+		},
+		"bronze_helm": {
+			"textures": "textures/items/defense/bronze/bronze_helm"
+		},
+		"bronze_platebody": {
+			"textures": "textures/items/defense/bronze/bronze_platebody"
+		},
+		"bronze_platelegs": {
+			"textures": "textures/items/defense/bronze/bronze_platelegs"
+		},
+		"bronze_boots": {
+			"textures": "textures/items/defense/bronze/bronze_boots"
+		},
+		"bronze_helm_t": {
+			"textures": "textures/items/defense/bronze/bronze_helm_t"
+		},
+		"bronze_platebody_t": {
+			"textures": "textures/items/defense/bronze/bronze_platebody_t"
+		},
+		"bronze_platelegs_t": {
+			"textures": "textures/items/defense/bronze/bronze_platelegs_t"
+		},
+		"bronze_boots_t": {
+			"textures": "textures/items/defense/bronze/bronze_boots_t"
+		},
+		"bronze_helm_g": {
+			"textures": "textures/items/defense/bronze/bronze_helm_g"
+		},
+		"bronze_platebody_g": {
+			"textures": "textures/items/defense/bronze/bronze_platebody_g"
+		},
+		"bronze_platelegs_g": {
+			"textures": "textures/items/defense/bronze/bronze_platelegs_g"
+		},
+		"bronze_boots_g": {
+			"textures": "textures/items/defense/bronze/bronze_boots_g"
+		},
+		"iron_helm": {
+			"textures": "textures/items/defense/iron/iron_helm"
+		},
+		"iron_platebody": {
+			"textures": "textures/items/defense/iron/iron_platebody"
+		},
+		"iron_platelegs": {
+			"textures": "textures/items/defense/iron/iron_platelegs"
+		},
+		"iron_boots": {
+			"textures": "textures/items/defense/iron/iron_boots"
+		},
+		"iron_helm_t": {
+			"textures": "textures/items/defense/iron/iron_helm_t"
+		},
+		"iron_platebody_t": {
+			"textures": "textures/items/defense/iron/iron_platebody_t"
+		},
+		"iron_platelegs_t": {
+			"textures": "textures/items/defense/iron/iron_platelegs_t"
+		},
+		"iron_boots_t": {
+			"textures": "textures/items/defense/iron/iron_boots_t"
+		},
+		"iron_helm_g": {
+			"textures": "textures/items/defense/iron/iron_helm_g"
+		},
+		"iron_platebody_g": {
+			"textures": "textures/items/defense/iron/iron_platebody_g"
+		},
+		"iron_platelegs_g": {
+			"textures": "textures/items/defense/iron/iron_platelegs_g"
+		},
+		"iron_boots_g": {
+			"textures": "textures/items/defense/iron/iron_boots_g"
+		},
+		"steel_helm": {
+			"textures": "textures/items/defense/steel/steel_helm"
+		},
+		"steel_platebody": {
+			"textures": "textures/items/defense/steel/steel_platebody"
+		},
+		"steel_platelegs": {
+			"textures": "textures/items/defense/steel/steel_platelegs"
+		},
+		"steel_boots": {
+			"textures": "textures/items/defense/steel/steel_boots"
+		},
+		"steel_helm_t": {
+			"textures": "textures/items/defense/steel/steel_helm_t"
+		},
+		"steel_platebody_t": {
+			"textures": "textures/items/defense/steel/steel_platebody_t"
+		},
+		"steel_platelegs_t": {
+			"textures": "textures/items/defense/steel/steel_platelegs_t"
+		},
+		"steel_boots_t": {
+			"textures": "textures/items/defense/steel/steel_boots_t"
+		},
+		"steel_helm_g": {
+			"textures": "textures/items/defense/steel/steel_helm_g"
+		},
+		"steel_platebody_g": {
+			"textures": "textures/items/defense/steel/steel_platebody_g"
+		},
+		"steel_platelegs_g": {
+			"textures": "textures/items/defense/steel/steel_platelegs_g"
+		},
+		"steel_boots_g": {
+			"textures": "textures/items/defense/steel/steel_boots_g"
+		},
+		"black_helm": {
+			"textures": "textures/items/defense/black/black_helm"
+		},
+		"black_platebody": {
+			"textures": "textures/items/defense/black/black_platebody"
+		},
+		"black_platelegs": {
+			"textures": "textures/items/defense/black/black_platelegs"
+		},
+		"black_boots": {
+			"textures": "textures/items/defense/black/black_boots"
+		},
+		"black_helm_t": {
+			"textures": "textures/items/defense/black/black_helm_t"
+		},
+		"black_platebody_t": {
+			"textures": "textures/items/defense/black/black_platebody_t"
+		},
+		"black_platelegs_t": {
+			"textures": "textures/items/defense/black/black_platelegs_t"
+		},
+		"black_boots_t": {
+			"textures": "textures/items/defense/black/black_boots_t"
+		},
+		"black_helm_g": {
+			"textures": "textures/items/defense/black/black_helm_g"
+		},
+		"black_platebody_g": {
+			"textures": "textures/items/defense/black/black_platebody_g"
+		},
+		"black_platelegs_g": {
+			"textures": "textures/items/defense/black/black_platelegs_g"
+		},
+		"black_boots_g": {
+			"textures": "textures/items/defense/black/black_boots_g"
+		},
+		"mithril_helm": {
+			"textures": "textures/items/defense/mithril/mithril_helm"
+		},
+		"mithril_platebody": {
+			"textures": "textures/items/defense/mithril/mithril_platebody"
+		},
+		"mithril_platelegs": {
+			"textures": "textures/items/defense/mithril/mithril_platelegs"
+		},
+		"mithril_boots": {
+			"textures": "textures/items/defense/mithril/mithril_boots"
+		},
+		"mithril_helm_t": {
+			"textures": "textures/items/defense/mithril/mithril_helm_t"
+		},
+		"mithril_platebody_t": {
+			"textures": "textures/items/defense/mithril/mithril_platebody_t"
+		},
+		"mithril_platelegs_t": {
+			"textures": "textures/items/defense/mithril/mithril_platelegs_t"
+		},
+		"mithril_boots_t": {
+			"textures": "textures/items/defense/mithril/mithril_boots_t"
+		},
+		"mithril_helm_g": {
+			"textures": "textures/items/defense/mithril/mithril_helm_g"
+		},
+		"mithril_platebody_g": {
+			"textures": "textures/items/defense/mithril/mithril_platebody_g"
+		},
+		"mithril_platelegs_g": {
+			"textures": "textures/items/defense/mithril/mithril_platelegs_g"
+		},
+		"mithril_boots_g": {
+			"textures": "textures/items/defense/mithril/mithril_boots_g"
+		},
+		"adamant_helm": {
+			"textures": "textures/items/defense/adamant/adamant_helm"
+		},
+		"adamant_platebody": {
+			"textures": "textures/items/defense/adamant/adamant_platebody"
+		},
+		"adamant_platelegs": {
+			"textures": "textures/items/defense/adamant/adamant_platelegs"
+		},
+		"adamant_boots": {
+			"textures": "textures/items/defense/adamant/adamant_boots"
+		},
+		"adamant_helm_t": {
+			"textures": "textures/items/defense/adamant/adamant_helm_t"
+		},
+		"adamant_platebody_t": {
+			"textures": "textures/items/defense/adamant/adamant_platebody_t"
+		},
+		"adamant_platelegs_t": {
+			"textures": "textures/items/defense/adamant/adamant_platelegs_t"
+		},
+		"adamant_boots_t": {
+			"textures": "textures/items/defense/adamant/adamant_boots_t"
+		},
+		"adamant_helm_g": {
+			"textures": "textures/items/defense/adamant/adamant_helm_g"
+		},
+		"adamant_platebody_g": {
+			"textures": "textures/items/defense/adamant/adamant_platebody_g"
+		},
+		"adamant_platelegs_g": {
+			"textures": "textures/items/defense/adamant/adamant_platelegs_g"
+		},
+		"adamant_boots_g": {
+			"textures": "textures/items/defense/adamant/adamant_boots_g"
+		},
+		"rune_helm": {
+			"textures": "textures/items/defense/rune/rune_helm"
+		},
+		"rune_platebody": {
+			"textures": "textures/items/defense/rune/rune_platebody"
+		},
+		"rune_platelegs": {
+			"textures": "textures/items/defense/rune/rune_platelegs"
+		},
+		"rune_boots": {
+			"textures": "textures/items/defense/rune/rune_boots"
+		},
+		"rune_helm_t": {
+			"textures": "textures/items/defense/rune/rune_helm_t"
+		},
+		"rune_platebody_t": {
+			"textures": "textures/items/defense/rune/rune_platebody_t"
+		},
+		"rune_platelegs_t": {
+			"textures": "textures/items/defense/rune/rune_platelegs_t"
+		},
+		"rune_boots_t": {
+			"textures": "textures/items/defense/rune/rune_boots_t"
+		},
+		"rune_helm_g": {
+			"textures": "textures/items/defense/rune/rune_helm_g"
+		},
+		"rune_platebody_g": {
+			"textures": "textures/items/defense/rune/rune_platebody_g"
+		},
+		"rune_platelegs_g": {
+			"textures": "textures/items/defense/rune/rune_platelegs_g"
+		},
+		"rune_boots_g": {
+			"textures": "textures/items/defense/rune/rune_boots_g"
+		},
+		"wood_sword": {
+			"textures": "textures/items/tools/wood/wood_sword"
+		},
+		"bronze_sword": {
+			"textures": "textures/items/tools/bronze/bronze_sword"
+		},
+		"steel_sword": {
+			"textures": "textures/items/tools/steel/steel_sword"
+		},
+		"iron_sword": {
+			"textures": "textures/items/tools/iron/iron_sword"
+		},
+		"black_sword": {
+			"textures": "textures/items/tools/black/black_sword"
+		},
+		"mithril_sword": {
+			"textures": "textures/items/tools/mithril/mithril_sword"
+		},
+		"adamant_sword": {
+			"textures": "textures/items/tools/adamant/adamant_sword"
+		},
+		"rune_sword": {
+			"textures": "textures/items/tools/rune/rune_sword"
+		},
+		"wood_hoe": {
+			"textures": "textures/items/tools/wood/wood_hoe"
+		},
+		"bronze_hoe": {
+			"textures": "textures/items/tools/bronze/bronze_hoe"
+		},
+		"steel_hoe": {
+			"textures": "textures/items/tools/steel/steel_hoe"
+		},
+		"iron_hoe": {
+			"textures": "textures/items/tools/iron/iron_hoe"
+		},
+		"black_hoe": {
+			"textures": "textures/items/tools/black/black_hoe"
+		},
+		"mithril_hoe": {
+			"textures": "textures/items/tools/mithril/mithril_hoe"
+		},
+		"adamant_hoe": {
+			"textures": "textures/items/tools/adamant/adamant_hoe"
+		},
+		"rune_hoe": {
+			"textures": "textures/items/tools/rune/rune_hoe"
+		},
+		"wood_shovel": {
+			"textures": "textures/items/tools/wood/wood_shovel"
+		},
+		"bronze_shovel": {
+			"textures": "textures/items/tools/bronze/bronze_shovel"
+		},
+		"steel_shovel": {
+			"textures": "textures/items/tools/steel/steel_shovel"
+		},
+		"iron_shovel": {
+			"textures": "textures/items/tools/iron/iron_shovel"
+		},
+		"black_shovel": {
+			"textures": "textures/items/tools/black/black_shovel"
+		},
+		"mithril_shovel": {
+			"textures": "textures/items/tools/mithril/mithril_shovel"
+		},
+		"adamant_shovel": {
+			"textures": "textures/items/tools/adamant/adamant_shovel"
+		},
+		"rune_shovel": {
+			"textures": "textures/items/tools/rune/rune_shovel"
+		},
+		"wood_axe": {
+			"textures": "textures/items/tools/wood/wood_axe"
+		},
+		"bronze_axe": {
+			"textures": "textures/items/tools/bronze/bronze_axe"
+		},
+		"steel_axe": {
+			"textures": "textures/items/tools/steel/steel_axe"
+		},
+		"iron_axe": {
+			"textures": "textures/items/tools/iron/iron_axe"
+		},
+		"black_axe": {
+			"textures": "textures/items/tools/black/black_axe"
+		},
+		"mithril_axe": {
+			"textures": "textures/items/tools/mithril/mithril_axe"
+		},
+		"adamant_axe": {
+			"textures": "textures/items/tools/adamant/adamant_axe"
+		},
+		"rune_axe": {
+			"textures": "textures/items/tools/rune/rune_axe"
+		},
+		"wood_pickaxe": {
+			"textures": "textures/items/tools/wood/wood_pickaxe"
+		},
+		"bronze_pickaxe": {
+			"textures": "textures/items/tools/bronze/bronze_pickaxe"
+		},
+		"steel_pickaxe": {
+			"textures": "textures/items/tools/steel/steel_pickaxe"
+		},
+		"iron_pickaxe": {
+			"textures": "textures/items/tools/iron/iron_pickaxe"
+		},
+		"black_pickaxe": {
+			"textures": "textures/items/tools/black/black_pickaxe"
+		},
+		"mithril_pickaxe": {
+			"textures": "textures/items/tools/mithril/mithril_pickaxe"
+		},
+		"adamant_pickaxe": {
+			"textures": "textures/items/tools/adamant/adamant_pickaxe"
+		},
+		"rune_pickaxe": {
+			"textures": "textures/items/tools/rune/rune_pickaxe"
+		},
+		"rogue_boots": {
+			"textures": "textures/items/thieving/rogue_boots"
+		},
+		"rogue_mask": {
+			"textures": "textures/items/thieving/rogue_mask"
+		},
+		"rogue_top": {
+			"textures": "textures/items/thieving/rogue_top"
+		},
+		"rogue_trousers": {
+			"textures": "textures/items/thieving/rogue_trousers"
+		},
+		"purple_party_hat": {
+			"textures": "textures/items/thieving/purple_party_hat"
+		}
+	}
+}

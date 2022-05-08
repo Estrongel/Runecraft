@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "runecraft:ranged_skillcape",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/models/armor/skillcapes/ranged_skillcape",
+        "mastery": "textures/models/armor/skillcapes/ranged_skillcape_m",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.skillcape",
+        "elytra_equipped": "geometry.skillcape_elytra_equipped"
+      },
+	  "animations": {
+	  	  "default": "animation.skillcape.default",
+		    "cape_swing": "controller.animation.skillcape"
+	  },
+      "scripts": {
+		"animate": [
+			"cape_swing"
+		],
+        "parent_setup": "variable.helmet_layer_visible = 0.0;"
+      },
+      "render_controllers": [ "controller.render.cloaks" ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"geometry.rogue_mask": {
+		"texturewidth": 32,
+		"textureheight": 16,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0], "inflate": 0.51}
+				]
+			},
+			{
+				"name": "bone",
+				"parent": "hat",
+				"pivot": [0, 24, 0],
+				"rotation": [0, 15, 0]
+			},
+			{
+				"name": "bone2",
+				"parent": "hat",
+				"pivot": [5, 0, 0],
+				"rotation": [0, -15, 0]
+			}
+		]
+	}
+}

@@ -1,0 +1,2027 @@
+{
+  //RuneCraft Prayer Display
+
+  
+  "prayer_display": {
+    "type": "image",
+    "bindings": [
+      {
+        "binding_name": "#is_not_creative_mode",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "size": [
+      24,
+      24
+    ],
+    "uv_size": [
+      28,
+      28
+    ],
+    "uv": "$uv",
+    "$uv|default": [
+      140,
+      0
+    ],
+    "variables": [
+      {
+        "requires": "($actionbar_text = 'prayer1_100'",
+        "$uv": [
+          140,
+          0
+        ]
+      },
+      {
+        "requires": "($actionbar_text = 'prayer1_90'",
+        "$uv": [
+          140,
+          34
+        ]
+      },
+      {
+        "requires": "($actionbar_text = 'prayer1_80'",
+        "$uv": [
+          140,
+          68
+        ]
+      }
+    ],
+    "texture": "textures/ui/test",
+    "layer": 2
+  },
+  //RuneCraft stamina Display
+  "stamina_display": {
+    "type": "image",
+    "bindings": [
+      {
+        "binding_name": "#is_not_creative_mode",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "size": [
+      24,
+      24
+    ],
+    "uv_size": [
+      28,
+      28
+    ],
+    "uv": "$uv",
+    "$uv|default": [
+      196,
+      0
+    ],
+    "variables": [
+      {
+        "requires": "(not(($actionbar_text - 'stamina:1;') = $actionbar_text))",
+        "$uv": [
+          224,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:2;') = $actionbar_text))",
+        "$uv": [
+          224,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:3;') = $actionbar_text))",
+        "$uv": [
+          224,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:4;') = $actionbar_text))",
+        "$uv": [
+          224,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:5;') = $actionbar_text))",
+        "$uv": [
+          224,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:6;') = $actionbar_text))",
+        "$uv": [
+          224,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:7;') = $actionbar_text))",
+        "$uv": [
+          224,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:8;') = $actionbar_text))",
+        "$uv": [
+          224,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:9;') = $actionbar_text))",
+        "$uv": [
+          224,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:10;') = $actionbar_text))",
+        "$uv": [
+          224,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:11;') = $actionbar_text))",
+        "$uv": [
+          224,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:12;') = $actionbar_text))",
+        "$uv": [
+          224,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:13;') = $actionbar_text))",
+        "$uv": [
+          224,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:14;') = $actionbar_text))",
+        "$uv": [
+          224,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:15;') = $actionbar_text))",
+        "$uv": [
+          224,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:16;') = $actionbar_text))",
+        "$uv": [
+          224,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:17;') = $actionbar_text))",
+        "$uv": [
+          224,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:18;') = $actionbar_text))",
+        "$uv": [
+          224,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:19;') = $actionbar_text))",
+        "$uv": [
+          224,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:20;') = $actionbar_text))",
+        "$uv": [
+          224,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:41;') = $actionbar_text))",
+        "$uv": [
+          224,
+          560
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:21;') = $actionbar_text))",
+        "$uv": [
+          196,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:22;') = $actionbar_text))",
+        "$uv": [
+          196,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:23;') = $actionbar_text))",
+        "$uv": [
+          196,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:24;') = $actionbar_text))",
+        "$uv": [
+          196,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:25;') = $actionbar_text))",
+        "$uv": [
+          196,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:26;') = $actionbar_text))",
+        "$uv": [
+          196,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:27;') = $actionbar_text))",
+        "$uv": [
+          196,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:28;') = $actionbar_text))",
+        "$uv": [
+          196,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:29;') = $actionbar_text))",
+        "$uv": [
+          196,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:30;') = $actionbar_text))",
+        "$uv": [
+          196,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:31;') = $actionbar_text))",
+        "$uv": [
+          196,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:32;') = $actionbar_text))",
+        "$uv": [
+          196,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:33;') = $actionbar_text))",
+        "$uv": [
+          196,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:34;') = $actionbar_text))",
+        "$uv": [
+          196,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:35;') = $actionbar_text))",
+        "$uv": [
+          196,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:36;') = $actionbar_text))",
+        "$uv": [
+          196,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:37;') = $actionbar_text))",
+        "$uv": [
+          196,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:38;') = $actionbar_text))",
+        "$uv": [
+          196,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:39;') = $actionbar_text))",
+        "$uv": [
+          196,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:40;') = $actionbar_text))",
+        "$uv": [
+          196,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'stamina:0;') = $actionbar_text))",
+        "$uv": [
+          196,
+          560
+        ]
+      }
+    ],
+    "texture": "textures/ui/test",
+    "layer": 2
+  },
+  //RuneCraft Armor Display
+
+  //armor text
+  "stamina_text": {
+    "type": "image",
+    "size": [
+      0,
+      0
+    ],
+    "texture": "textures/ui/test",
+    "alpha": 0.8,
+    "controls": [
+      {
+        "actionbar_message": {
+          "type": "label",
+          "color": [0.186, 0.927, 0.27],
+          "layer": 1,
+          "text": "$text",
+          "localize": true,
+          "font_size": 0,
+          "shadow": true,
+          "text_alignment": "center",
+          "alpha": 1.0,
+          "variables": [
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:0;') = $actionbar_text))",
+              "$text": "0"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:1;') = $actionbar_text))",
+              "$text": "1"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:2;') = $actionbar_text))",
+              "$text": "2"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:3;') = $actionbar_text))",
+              "$text": "3"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:4;') = $actionbar_text))",
+              "$text": "4"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:5;') = $actionbar_text))",
+              "$text": "5"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:6;') = $actionbar_text))",
+              "$text": "6"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:7;') = $actionbar_text))",
+              "$text": "7"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:8;') = $actionbar_text))",
+              "$text": "8"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:9;') = $actionbar_text))",
+              "$text": "9"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:10;') = $actionbar_text))",
+              "$text": "10"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:11;') = $actionbar_text))",
+              "$text": "11"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:12;') = $actionbar_text))",
+              "$text": "12"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:13;') = $actionbar_text))",
+              "$text": "13"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:14;') = $actionbar_text))",
+              "$text": "14"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:15;') = $actionbar_text))",
+              "$text": "15"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:16;') = $actionbar_text))",
+              "$text": "16"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:17;') = $actionbar_text))",
+              "$text": "17"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:18;') = $actionbar_text))",
+              "$text": "18"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:19;') = $actionbar_text))",
+              "$text": "19"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:20;') = $actionbar_text))",
+              "$text": "20"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:21;') = $actionbar_text))",
+              "$text": "21"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:22;') = $actionbar_text))",
+              "$text": "22"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:23;') = $actionbar_text))",
+              "$text": "23"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:24;') = $actionbar_text))",
+              "$text": "24"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:25;') = $actionbar_text))",
+              "$text": "25"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:26;') = $actionbar_text))",
+              "$text": "26"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:27;') = $actionbar_text))",
+              "$text": "27"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:28;') = $actionbar_text))",
+              "$text": "28"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:29;') = $actionbar_text))",
+              "$text": "29"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:30;') = $actionbar_text))",
+              "$text": "30"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:31;') = $actionbar_text))",
+              "$text": "31"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:32;') = $actionbar_text))",
+              "$text": "32"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:33;') = $actionbar_text))",
+              "$text": "33"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:34;') = $actionbar_text))",
+              "$text": "34"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:35;') = $actionbar_text))",
+              "$text": "35"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:36;') = $actionbar_text))",
+              "$text": "36"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:37;') = $actionbar_text))",
+              "$text": "37"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:38;') = $actionbar_text))",
+              "$text": "38"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:39;') = $actionbar_text))",
+              "$text": "39"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:40;') = $actionbar_text))",
+              "$text": "40"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:41;') = $actionbar_text))",
+              "$text": "41"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:42;') = $actionbar_text))",
+              "$text": "42"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:43;') = $actionbar_text))",
+              "$text": "43"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:44;') = $actionbar_text))",
+              "$text": "44"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:45;') = $actionbar_text))",
+              "$text": "45"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:46;') = $actionbar_text))",
+              "$text": "46"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:47;') = $actionbar_text))",
+              "$text": "47"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:48;') = $actionbar_text))",
+              "$text": "48"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:49;') = $actionbar_text))",
+              "$text": "49"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:50;') = $actionbar_text))",
+              "$text": "50"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:51;') = $actionbar_text))",
+              "$text": "51"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:52;') = $actionbar_text))",
+              "$text": "52"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:53;') = $actionbar_text))",
+              "$text": "53"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:54;') = $actionbar_text))",
+              "$text": "54"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:55;') = $actionbar_text))",
+              "$text": "55"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:56;') = $actionbar_text))",
+              "$text": "56"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:57;') = $actionbar_text))",
+              "$text": "57"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:58;') = $actionbar_text))",
+              "$text": "58"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:59;') = $actionbar_text))",
+              "$text": "59"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:60;') = $actionbar_text))",
+              "$text": "60"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:61;') = $actionbar_text))",
+              "$text": "61"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:62;') = $actionbar_text))",
+              "$text": "62"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:63;') = $actionbar_text))",
+              "$text": "63"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:64;') = $actionbar_text))",
+              "$text": "64"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:65;') = $actionbar_text))",
+              "$text": "65"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:66;') = $actionbar_text))",
+              "$text": "66"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:67;') = $actionbar_text))",
+              "$text": "67"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:68;') = $actionbar_text))",
+              "$text": "68"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:69;') = $actionbar_text))",
+              "$text": "69"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:70;') = $actionbar_text))",
+              "$text": "70"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:71;') = $actionbar_text))",
+              "$text": "71"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:72;') = $actionbar_text))",
+              "$text": "72"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:73;') = $actionbar_text))",
+              "$text": "73"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:74;') = $actionbar_text))",
+              "$text": "74"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:75;') = $actionbar_text))",
+              "$text": "75"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:76;') = $actionbar_text))",
+              "$text": "76"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:77;') = $actionbar_text))",
+              "$text": "77"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:78;') = $actionbar_text))",
+              "$text": "78"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:79;') = $actionbar_text))",
+              "$text": "79"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:80;') = $actionbar_text))",
+              "$text": "80"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:81;') = $actionbar_text))",
+              "$text": "81"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:82;') = $actionbar_text))",
+              "$text": "82"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:83;') = $actionbar_text))",
+              "$text": "83"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:84;') = $actionbar_text))",
+              "$text": "84"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:85;') = $actionbar_text))",
+              "$text": "85"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:86;') = $actionbar_text))",
+              "$text": "86"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:87;') = $actionbar_text))",
+              "$text": "87"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:88;') = $actionbar_text))",
+              "$text": "88"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:89;') = $actionbar_text))",
+              "$text": "89"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:90;') = $actionbar_text))",
+              "$text": "90"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:91;') = $actionbar_text))",
+              "$text": "91"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:92;') = $actionbar_text))",
+              "$text": "92"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:93;') = $actionbar_text))",
+              "$text": "93"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:94;') = $actionbar_text))",
+              "$text": "94"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:95;') = $actionbar_text))",
+              "$text": "95"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:96;') = $actionbar_text))",
+              "$text": "96"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:97;') = $actionbar_text))",
+              "$text": "97"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:98;') = $actionbar_text))",
+              "$text": "98"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:99;') = $actionbar_text))",
+              "$text": "99"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'stamina_text:100;') = $actionbar_text))",
+              "$text": "100"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "armor_text": {
+    "type": "image",
+    "size": [
+      0,
+      0
+    ],
+    "texture": "textures/ui/test",
+    "alpha": 0.8,
+    "controls": [
+      {
+        "actionbar_message": {
+          "type": "label",
+          "color": [0.186, 0.927, 0.27],
+          "layer": 1,
+          "text": "$text",
+          "localize": true,
+          "font_size": 0,
+          "shadow": true,
+          "text_alignment": "center",
+          "alpha": 1.0,
+          "variables": [
+            {
+              "requires": "(not(($actionbar_text - 'armor:0;') = $actionbar_text))",
+              "$text": "0"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:1;') = $actionbar_text))",
+              "$text": "1"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:2;') = $actionbar_text))",
+              "$text": "2"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:3;') = $actionbar_text))",
+              "$text": "3"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:4;') = $actionbar_text))",
+              "$text": "4"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:5;') = $actionbar_text))",
+              "$text": "5"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:6;') = $actionbar_text))",
+              "$text": "6"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:7;') = $actionbar_text))",
+              "$text": "7"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:8;') = $actionbar_text))",
+              "$text": "8"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:9;') = $actionbar_text))",
+              "$text": "9"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:10;') = $actionbar_text))",
+              "$text": "10"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:11;') = $actionbar_text))",
+              "$text": "11"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:12;') = $actionbar_text))",
+              "$text": "12"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:13;') = $actionbar_text))",
+              "$text": "13"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:14;') = $actionbar_text))",
+              "$text": "14"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:15;') = $actionbar_text))",
+              "$text": "15"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:16;') = $actionbar_text))",
+              "$text": "16"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:17;') = $actionbar_text))",
+              "$text": "17"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:18;') = $actionbar_text))",
+              "$text": "18"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:19;') = $actionbar_text))",
+              "$text": "19"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'armor:20;') = $actionbar_text))",
+              "$text": "20"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  //armor image
+  "armor_display": {
+    "type": "image",
+    "bindings": [
+      {
+        "binding_name": "#is_not_creative_mode",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "size": [
+      24,
+      24
+    ],
+    "uv_size": [
+      28,
+      28
+    ],
+    "uv": "$uv",
+    "$uv|default": [
+      170,
+      0
+    ],
+    "variables": [
+      {
+        "requires": "(not(($actionbar_text - 'armor:20;') = $actionbar_text))",
+        "$uv": [
+          112,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:19;') = $actionbar_text))",
+        "$uv": [
+          112,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:18;') = $actionbar_text))",
+        "$uv": [
+          112,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:17;') = $actionbar_text))",
+        "$uv": [
+          112,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:16;') = $actionbar_text))",
+        "$uv": [
+          112,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:15;') = $actionbar_text))",
+        "$uv": [
+          112,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:14;') = $actionbar_text))",
+        "$uv": [
+          112,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:13;') = $actionbar_text))",
+        "$uv": [
+          112,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:12;') = $actionbar_text))",
+        "$uv": [
+          112,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:11;') = $actionbar_text))",
+        "$uv": [
+          112,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:10;') = $actionbar_text))",
+        "$uv": [
+          112,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:9;') = $actionbar_text))",
+        "$uv": [
+          112,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:8;') = $actionbar_text))",
+        "$uv": [
+          112,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:7;') = $actionbar_text))",
+        "$uv": [
+          112,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:6;') = $actionbar_text))",
+        "$uv": [
+          112,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:5;') = $actionbar_text))",
+        "$uv": [
+          112,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:4;') = $actionbar_text))",
+        "$uv": [
+          112,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:3;') = $actionbar_text))",
+        "$uv": [
+          112,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:2;') = $actionbar_text))",
+        "$uv": [
+          112,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:1;') = $actionbar_text))",
+        "$uv": [
+          112,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'armor:0;') = $actionbar_text))",
+        "$uv": [
+          112,
+          560
+        ]
+      }
+    ],
+    "texture": "textures/ui/test",
+    "layer": 2
+  },
+  //RuneCraft hitpoints display
+  "hud_actionbar_text": {
+    "type": "image",
+    "size": [
+      0,
+      0
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [
+      124,
+      73
+    ],
+    "controls": [
+      {
+        "actionbar_message": {
+          "type": "label",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "color": [0.186, 0.927, 0.27],
+          "layer": 1,
+          "text": "$text",
+          "localize": true,
+          "font_size": 0,
+          "shadow": true,
+          "text_alignment": "center",
+          "alpha": 1.0,
+          "variables": [
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:0;') = $actionbar_text))",
+              "$text": "0"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:1;') = $actionbar_text))",
+              "$text": "1"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:2;') = $actionbar_text))",
+              "$text": "2"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:3;') = $actionbar_text))",
+              "$text": "3"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:4;') = $actionbar_text))",
+              "$text": "4"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:5;') = $actionbar_text))",
+              "$text": "5"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:6;') = $actionbar_text))",
+              "$text": "6"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:7;') = $actionbar_text))",
+              "$text": "7"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:8;') = $actionbar_text))",
+              "$text": "8"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:9;') = $actionbar_text))",
+              "$text": "9"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:10;') = $actionbar_text))",
+              "$text": "10"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:11;') = $actionbar_text))",
+              "$text": "11"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:12;') = $actionbar_text))",
+              "$text": "12"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:13;') = $actionbar_text))",
+              "$text": "13"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:14;') = $actionbar_text))",
+              "$text": "14"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:15;') = $actionbar_text))",
+              "$text": "15"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:16;') = $actionbar_text))",
+              "$text": "16"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:17;') = $actionbar_text))",
+              "$text": "17"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:18;') = $actionbar_text))",
+              "$text": "18"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:19;') = $actionbar_text))",
+              "$text": "19"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:20;') = $actionbar_text))",
+              "$text": "20"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:21;') = $actionbar_text))",
+              "$text": "21"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:21;') = $actionbar_text))",
+              "$text": "21"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:22;') = $actionbar_text))",
+              "$text": "22"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:23;') = $actionbar_text))",
+              "$text": "23"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:24;') = $actionbar_text))",
+              "$text": "24"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:25;') = $actionbar_text))",
+              "$text": "25"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:26;') = $actionbar_text))",
+              "$text": "26"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:27;') = $actionbar_text))",
+              "$text": "27"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:28;') = $actionbar_text))",
+              "$text": "28"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:29;') = $actionbar_text))",
+              "$text": "29"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:30;') = $actionbar_text))",
+              "$text": "30"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:31;') = $actionbar_text))",
+              "$text": "31"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:32;') = $actionbar_text))",
+              "$text": "32"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:33;') = $actionbar_text))",
+              "$text": "33"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:34;') = $actionbar_text))",
+              "$text": "34"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:35;') = $actionbar_text))",
+              "$text": "35"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:36;') = $actionbar_text))",
+              "$text": "36"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:37;') = $actionbar_text))",
+              "$text": "37"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:38;') = $actionbar_text))",
+              "$text": "38"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:39;') = $actionbar_text))",
+              "$text": "39"
+            },
+            {
+              "requires": "(not(($actionbar_text - 'hp_text:40;') = $actionbar_text))",
+              "$text": "40"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hitpoints_display": {
+    "type": "image",
+    "size": [
+      24,
+      24
+    ],
+    "uv_size": [
+      28,
+      28
+    ],
+    "uv": "$uv",
+    "$uv|default": [
+      0,
+      0
+    ],
+    "variables": [
+      {
+        "requires": "(not(($actionbar_text - 'hp:61;') = $actionbar_text))",
+        "$uv": [
+          84,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:62;') = $actionbar_text))",
+        "$uv": [
+          84,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:63;') = $actionbar_text))",
+        "$uv": [
+          84,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:64;') = $actionbar_text))",
+        "$uv": [
+          84,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:65;') = $actionbar_text))",
+        "$uv": [
+          84,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:66;') = $actionbar_text))",
+        "$uv": [
+          84,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:67;') = $actionbar_text))",
+        "$uv": [
+          84,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:68;') = $actionbar_text))",
+        "$uv": [
+          84,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:69;') = $actionbar_text))",
+        "$uv": [
+          84,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:70;') = $actionbar_text))",
+        "$uv": [
+          84,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:71;') = $actionbar_text))",
+        "$uv": [
+          84,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:72;') = $actionbar_text))",
+        "$uv": [
+          84,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:73;') = $actionbar_text))",
+        "$uv": [
+          84,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:74;') = $actionbar_text))",
+        "$uv": [
+          84,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:75;') = $actionbar_text))",
+        "$uv": [
+          84,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:76;') = $actionbar_text))",
+        "$uv": [
+          84,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:77;') = $actionbar_text))",
+        "$uv": [
+          84,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:78;') = $actionbar_text))",
+        "$uv": [
+          84,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:79;') = $actionbar_text))",
+        "$uv": [
+          84,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:80;') = $actionbar_text))",
+        "$uv": [
+          84,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:41;') = $actionbar_text))",
+        "$uv": [
+          56,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:42;') = $actionbar_text))",
+        "$uv": [
+          56,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:43;') = $actionbar_text))",
+        "$uv": [
+          56,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:44;') = $actionbar_text))",
+        "$uv": [
+          56,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:45;') = $actionbar_text))",
+        "$uv": [
+          56,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:46;') = $actionbar_text))",
+        "$uv": [
+          56,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:47;') = $actionbar_text))",
+        "$uv": [
+          56,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:48;') = $actionbar_text))",
+        "$uv": [
+          56,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:49;') = $actionbar_text))",
+        "$uv": [
+          56,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:50;') = $actionbar_text))",
+        "$uv": [
+          56,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:51;') = $actionbar_text))",
+        "$uv": [
+          56,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:52;') = $actionbar_text))",
+        "$uv": [
+          56,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:53;') = $actionbar_text))",
+        "$uv": [
+          56,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:54;') = $actionbar_text))",
+        "$uv": [
+          56,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:55;') = $actionbar_text))",
+        "$uv": [
+          56,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:56;') = $actionbar_text))",
+        "$uv": [
+          56,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:57;') = $actionbar_text))",
+        "$uv": [
+          56,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:58;') = $actionbar_text))",
+        "$uv": [
+          56,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:59;') = $actionbar_text))",
+        "$uv": [
+          56,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:60;') = $actionbar_text))",
+        "$uv": [
+          56,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:21;') = $actionbar_text))",
+        "$uv": [
+          28,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:22;') = $actionbar_text))",
+        "$uv": [
+          28,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:23;') = $actionbar_text))",
+        "$uv": [
+          28,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:24;') = $actionbar_text))",
+        "$uv": [
+          28,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:25;') = $actionbar_text))",
+        "$uv": [
+          28,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:26;') = $actionbar_text))",
+        "$uv": [
+          28,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:27;') = $actionbar_text))",
+        "$uv": [
+          28,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:28;') = $actionbar_text))",
+        "$uv": [
+          28,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:29;') = $actionbar_text))",
+        "$uv": [
+          28,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:30;') = $actionbar_text))",
+        "$uv": [
+          28,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:31;') = $actionbar_text))",
+        "$uv": [
+          28,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:32;') = $actionbar_text))",
+        "$uv": [
+          28,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:33;') = $actionbar_text))",
+        "$uv": [
+          28,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:34;') = $actionbar_text))",
+        "$uv": [
+          28,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:35;') = $actionbar_text))",
+        "$uv": [
+          28,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:36;') = $actionbar_text))",
+        "$uv": [
+          28,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:37;') = $actionbar_text))",
+        "$uv": [
+          28,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:38;') = $actionbar_text))",
+        "$uv": [
+          28,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:39;') = $actionbar_text))",
+        "$uv": [
+          28,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:40;') = $actionbar_text))",
+        "$uv": [
+          28,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:1;') = $actionbar_text))",
+        "$uv": [
+          0,
+          0
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:2;') = $actionbar_text))",
+        "$uv": [
+          0,
+          28
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:3;') = $actionbar_text))",
+        "$uv": [
+          0,
+          56
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:4;') = $actionbar_text))",
+        "$uv": [
+          0,
+          84
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:5;') = $actionbar_text))",
+        "$uv": [
+          0,
+          112
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:6;') = $actionbar_text))",
+        "$uv": [
+          0,
+          140
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:7;') = $actionbar_text))",
+        "$uv": [
+          0,
+          168
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:8;') = $actionbar_text))",
+        "$uv": [
+          0,
+          196
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:9;') = $actionbar_text))",
+        "$uv": [
+          0,
+          224
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:10;') = $actionbar_text))",
+        "$uv": [
+          0,
+          252
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:11;') = $actionbar_text))",
+        "$uv": [
+          0,
+          280
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:12;') = $actionbar_text))",
+        "$uv": [
+          0,
+          308
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:13;') = $actionbar_text))",
+        "$uv": [
+          0,
+          336
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:14;') = $actionbar_text))",
+        "$uv": [
+          0,
+          364
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:15;') = $actionbar_text))",
+        "$uv": [
+          0,
+          392
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:16;') = $actionbar_text))",
+        "$uv": [
+          0,
+          420
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:17;') = $actionbar_text))",
+        "$uv": [
+          0,
+          448
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:18;') = $actionbar_text))",
+        "$uv": [
+          0,
+          476
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:19;') = $actionbar_text))",
+        "$uv": [
+          0,
+          504
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:20;') = $actionbar_text))",
+        "$uv": [
+          0,
+          532
+        ]
+      },
+      {
+        "requires": "(not(($actionbar_text - 'hp:0;') = $actionbar_text))",
+        "$uv": [
+          0,
+          560
+        ]
+      }
+    ],
+    "texture": "textures/ui/test",
+    "layer": 2
+  },
+  //RuneCraft Root Panel
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "stamina_text": {
+              "type": "panel",
+              "offset": [
+                70,
+                73
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.stamina_text"
+                }
+              }
+            }
+          },
+          {
+            "armor_text": {
+              "type": "panel",
+              "offset": [
+                -35,
+                73
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.armor_text"
+                }
+              }
+            }
+          },
+          {
+            "hitpoints_display": {
+              "type": "panel",
+              "offset": [
+                -70,
+                90
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.hitpoints_display"
+                }
+              }
+            }
+          },
+          {
+            "armor_display": {
+              "type": "panel",
+              "offset": [
+                -35,
+                90
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.armor_display"
+                }
+              }
+            }
+          },
+          {
+            "prayer_display": {
+              "type": "panel",
+              "offset": [
+                35,
+                90
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.prayer_display"
+                }
+              }
+            }
+          },
+          {
+            "stamina_display": {
+              "type": "panel",
+              "offset": [
+                70,
+                90
+              ],
+              "anchor_from": "bottom_left",
+              "anchor_to": "bottom_left",
+              "factory": {
+                "name": "hud_actionbar_text_factory",
+                "control_ids": {
+                  "hud_actionbar_text": "sample_display@hud.stamina_display"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  //Vanilla hud junk I removed
+  "centered_gui_elements_at_bottom_middle": {
+    "type": "panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [
+      180,
+      50
+    ],
+    "controls": [
+      {
+        "exp_rend@exp_progress_bar_and_hotbar": {}
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#hud_visible_centered",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ]
+  },
+  "not_centered_gui_elements": {
+    "type": "panel",
+    "controls": [],
+    "bindings": [
+      {
+        "binding_name": "#hud_visible_not_centered",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ]
+  }
+}

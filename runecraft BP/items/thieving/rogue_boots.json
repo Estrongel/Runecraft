@@ -1,0 +1,50 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "runecraft:rogue_boots",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:runecraft:boots": {},
+			"tag:runecraft:rogue_boots": {},
+            "minecraft:icon": {
+                "texture": "rogue_boots"
+            },
+            "minecraft:display_name": {
+				"value": "\u00A75Rogue Boots\n\u00A7bOther Bonuses:\n\u00A76\u00A7oRogue\u00A7r\u00A76 - 20%%% chance to steal an additional item\n\u00A7oFull Set\u00A7r\u00A76 - 20%%% additional chance to steal an additional item"
+			},
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.boots"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:render_offsets": "boots",
+            "minecraft:armor": {
+                "protection": 0
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "playsound"
+                }
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.feet"
+            }
+        },
+        "events": {
+            "playsound": {
+                "sequence": [
+                    {
+                        "condition": "q.armor_texture_slot(3) == -1 && !q.equipped_item_any_tag('slot.armor.feet','runecraft:boots')",
+                        "run_command": {
+                            "command": [
+                                "playsound armor.equip_leather @p"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

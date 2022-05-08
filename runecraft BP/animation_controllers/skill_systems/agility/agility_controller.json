@@ -1,0 +1,190 @@
+{
+	//Controller and Addon made by Estrongel
+	//Find me on Youtube to support my work :)
+	//THIS CONTROLLER HOUSES THE CONTROLLERS FOR ALL CONTROLLERS PERTAINING TO THE AGILITY SKILL
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		//controller for providing XP while sprinting
+		"controller.animation.player.agility_xp_from_sprint": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							//the large amount of not conditions are in attempt to prevent people who create farms to abuse the methods of obtaining sprint XP and are not intended to prevent normal functionality
+							"give_xp": "query.is_sprinting && query.scoreboard('stamina_main') > 0 && (!query.is_gliding || query.is_idling || query.is_in_ui || query.is_riding) && query.scoreboard('falling_timer') <= 7"
+						}
+					]
+				},
+				//master controller for giving sprint xp
+				"give_xp": {
+					"transitions": [
+						{
+							//bonus XP, given when a player has a speed effect applied to them
+							"xp_speed": "query.scoreboard('speed') == 1"
+						},
+						{
+							//base level XP, given when a player does not have a speed effect applied to them
+							"xp_no_speed": "1.0"
+						}
+					]
+				},
+				"xp_speed": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s agility_xp_c 2",
+						"/scoreboard players add @s tot_agility_xp 2",
+						"/scoreboard players add @s tot_xp 2"
+					]
+				},
+				"xp_no_speed": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s agility_xp_c 1",
+						"/scoreboard players add @s tot_agility_xp 1",
+						"/scoreboard players add @s tot_xp 1"
+					]
+				}
+			}
+		},
+		//controller for providing XP while falling
+		"controller.animation.player.agility_xp_from_falling": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							//is ran when a player has fallen from a distance that would NOT damage them or has jumped into water to prevent fall damage or if a player has died
+							"remove_fall_xp": "(query.is_on_ground && query.scoreboard('falling_timer') <= 7 || query.health == 0.0 || query.is_in_water)"
+						},
+						{
+							"store_fall_xp": "!query.is_on_ground && !query.is_gliding && !query.is_in_water && !query.is_riding && query.is_moving && !query.is_in_ui"
+						},
+						{
+							"give_fall_xp": "query.is_on_ground && query.health > 0"
+						}
+					]
+				},
+				"store_fall_xp": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s falling_timer 1"
+					]
+				},
+				//remove the xp a player would gain for agility if they died, took a fall that would not damage them, or jumped into water
+				"remove_fall_xp": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s falling_timer 0"
+					]
+				},
+				//give the player agility xp from falling
+				"give_fall_xp": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					//calculate the XP the player receives
+					//base value -7 (time from a fall that would not damage a player) 
+					//hardcap the timer at 80 to prevent large xp farms for agility from functioning their best, if a player falls between 1-80 they will receive the *4 multiplier
+					//a player with a falling timer ending up at 81 or higher will not receive the *4 multiplier
+					"on_entry": [
+						"/scoreboard players remove @s falling_timer 7",
+						"/scoreboard players operation @s[scores={falling_timer=..140}] falling timer *= \"4\" four_constant",
+						"/scoreboard players operation @s agility_xp_c += @s falling_timer",
+						"/scoreboard players operation @s tot_agility_xp += @s falling_timer",
+						"/scoreboard players operation @s tot_xp += @s falling_timer"
+					],
+					"on_exit": [
+						"/scoreboard players set @s falling_timer 0"
+					]
+				}
+			}
+		},
+		//controller for leveling up a players agility skill
+		"controller.animation.player.agility_level_up": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"level_up": "query.scoreboard('agility_xp_c') >= query.scoreboard('agility_xp_r') && query.scoreboard('agility_level') < 120 && query.scoreboard('player') >= 3"
+						}
+					]
+				},
+				"level_up": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s total_level 1",
+						"/scoreboard players add @s agility_level 1",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A75Agility\u00A7e leveled up to\u00A7a \"}, {\"score\":{\"name\": \"@s\", \"objective\": \"agility_level\"}},{\"text\": \"\u00A7e!\"}]}",
+						"/playsound agility.level.up @s",
+						"/scoreboard players operation @s agility_xp_c -= @s agility_xp_r",
+						"/scoreboard players set @s stamina_main 1000",
+						"/function agility_xp",
+						"/event entity @s runecraft:agility_level_up"
+					]
+				}
+			}
+		},
+		//controller for checking player wearing unusable items
+		"controller.animation.agility_items": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"unusable1": "(q.equipped_item_any_tag('slot.armor.feet','runecraft:graceful_boots') && query.scoreboard('agility_level') < 17) || (q.equipped_item_any_tag('slot.armor.head','runecraft:graceful_hood') && query.scoreboard('agility_level') < 31) || (q.equipped_item_any_tag('slot.armor.legs','runecraft:graceful_leggings') && query.scoreboard('agility_level') < 45) || (q.equipped_item_any_tag('slot.armor.chest','runecraft:graceful_top') && query.scoreboard('agility_level') < 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') < 99)"
+						}
+					],
+					"on_exit": [
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A74!!!\u00A7e Unable to use \u00A74!!!\"}]}"
+					]
+				},
+				"unusable1": {
+					"transitions": [
+						{
+							"default": "!((q.equipped_item_any_tag('slot.armor.feet','runecraft:graceful_boots') && query.scoreboard('agility_level') < 17) || (q.equipped_item_any_tag('slot.armor.head','runecraft:graceful_hood') && query.scoreboard('agility_level') < 31) || (q.equipped_item_any_tag('slot.armor.legs','runecraft:graceful_leggings') && query.scoreboard('agility_level') < 45) || (q.equipped_item_any_tag('slot.armor.chest','runecraft:graceful_top') && query.scoreboard('agility_level') < 59) || (q.equipped_item_any_tag('slot.armor.head','runecraft:agility_skillcape') && query.scoreboard('agility_level') < 99))"
+						},
+						{
+							"unusable2": "1.0"
+						}
+					]
+				},
+				"unusable2": {
+					"transitions": [
+						{
+							"unusable1": "1.0"
+						}
+					],
+					"on_entry": [
+						"/effect @s slowness 11 3 true",
+						"/effect @s weakness 11 3 true",
+						"/effect @s mining_fatigue 11 3 true"
+					]
+				}
+			}
+		}
+	}
+}

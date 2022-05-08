@@ -1,0 +1,164 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.initialize": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"AUGHGHHHGHGHGAUGAHGUHG": "query.scoreboard('player') == 0"
+						},
+						{
+							"initialize_general": "query.scoreboard('player') == 1"
+						},
+						{
+							"initialize_agility": "query.scoreboard('player') == 2"
+						},
+						{
+							"initialize_thieving": "query.scoreboard('player') == 3"
+						},
+						{
+							"initialize_constitution": "query.scoreboard('player') == 4"
+						},
+						{
+							"initialize_defense": "query.scoreboard('player') == 5"
+						},
+						{
+							"initialize_attack": "query.scoreboard('player') == 6"
+						},
+						{
+							"initialize_ranged": "query.scoreboard('player') == 7"
+						}
+					]
+				},
+				"AUGHGHHHGHGHGAUGAHGUHG": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s player 1"
+					]
+				},
+				"initialize_general": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s tot_xp 0",
+						"/scoreboard players set @s tot_level 0",
+						"/scoreboard players set @s h_av 0",
+						"/scoreboard players set @s c_av 0",
+						"/scoreboard players set @s l_av 0",
+						"/scoreboard players set @s b_av 0",
+						"/scoreboard players set @s t_av 0",
+						"/scoreboard players set @s player 2"
+					]
+				},
+				"initialize_agility": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s tot_level 1",
+						"/scoreboard players set @s agility_level 1",
+						"/scoreboard players set @s agility_xp_c 0",
+						"/scoreboard players set @s tot_agility_xp 0",
+						"/scoreboard players set @s agility_xp_r 523",
+						"/scoreboard players set @s regen_amount 0",
+						"/scoreboard players set @s agility_timer 0",
+						"/scoreboard players set @s falling_timer 0",
+						"/scoreboard players set @s stamina_temp 1000",
+						"/scoreboard players set @s stamina_main 1000",
+						"/scoreboard players set @s stamina_max 1000",
+						"/scoreboard players set @s speed 0",
+						"/scoreboard players set @s player 3"
+					]
+				},
+				"initialize_thieving": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s thieving_level 1",
+						"/scoreboard players set @s thieving_xp_c 0",
+						"/scoreboard players set @s thieving_xp_r 523",
+						"/scoreboard players set @s tot_thieving_xp 0",
+						"/scoreboard players set @s entity_xp 0",
+						"/scoreboard players set @s entity_type 0",
+						"/scoreboard players set @s entity_cd 0",
+						"/scoreboard players set @s player_cd 0",
+						"/scoreboard players set @s thieving_start 0",
+						"/scoreboard players set @s in_range 0",
+						"/scoreboard players set @s player 4"
+					]
+				},
+				"initialize_constitution": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s const_level 1",
+						"/scoreboard players set @s const_xp_c 0",
+						"/scoreboard players set @s const_xp_r 523",
+						"/scoreboard players set @s tot_const_xp 0",
+						"/scoreboard players set @s player 5"
+					]
+				},
+				"initialize_defense": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s def_level 1",
+						"/scoreboard players set @s def_xp_c 0",
+						"/scoreboard players set @s def_xp_r 523",
+						"/scoreboard players set @s tot_def_xp 0",
+						"/scoreboard players set @s player 6"
+					]
+				},
+				"initialize_attack": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s attack_level 1",
+						"/scoreboard players set @s attack_xp_c 0",
+						"/scoreboard players set @s attack_xp_r 523",
+						"/scoreboard players set @s tot_attack_xp 0",
+						"/scoreboard players set @s player 7"
+					]
+				},
+				"initialize_ranged": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s ranged_level 1",
+						"/scoreboard players set @s ranged_xp_c 0",
+						"/scoreboard players set @s ranged_xp_r 523",
+						"/scoreboard players set @s tot_ranged_xp 0",
+						"/scoreboard players set @s player 8"
+					]
+				}
+			}		
+		}
+	}
+}
+		

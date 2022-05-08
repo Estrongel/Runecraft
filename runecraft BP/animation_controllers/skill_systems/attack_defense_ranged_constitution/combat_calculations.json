@@ -1,0 +1,216 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.combat_calculations": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"melee": "query.scoreboard('hit_type') == 2 && !query.is_alive"
+						},
+						{
+							"ranged": "query.scoreboard('hit_type') == 1 && !query.is_alive"
+						},
+						{
+							"alive": "query.is_alive && (query.scoreboard('hit_type') == 2 || query.scoreboard('hit_type') == 1) && query.scoreboard('health_track') != query.scoreboard('health')"
+						},
+						{
+							"health_match": "query.scoreboard('health_track') != query.scoreboard('health')"
+						}
+					]
+				},
+				"alive": {
+					"transitions": [
+						{
+							"melee": "query.scoreboard('hit_type') == 2"
+						},
+						{
+							"ranged": "query.scoreboard('hit_type') == 1"
+						},
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players operation @s health_track -= @s health"
+					]
+				},
+				"melee": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/say melee track",
+						"/scoreboard players operation @s attack_track = @s health_track",
+						"/scoreboard players operation @s defense_track = @s health_track",
+						"/scoreboard players operation @s const_track = @s health_track",
+						"/scoreboard players operation @s attack_track *= \"7\" seven_constant",
+						"/scoreboard players operation @s defense_track *= \"5\" five_constant",
+						"/scoreboard players operation @s const_track *= \"4\" four_constant",
+						"/scoreboard players operation @e[tag=attacker] attack_xp_c += @s attack_track",
+						"/scoreboard players operation @e[tag=attacker] tot_attack_xp += @s attack_track",
+						"/scoreboard players operation @e[tag=attacker] defense_xp_c += @s defense_track",
+						"/scoreboard players operation @e[tag=attacker] tot_def_xp += @s defense_track",
+						"/scoreboard players operation @e[tag=attacker] const_xp_c += @s const_track",
+						"/scoreboard players operation @e[tag=attacker] tot_const_xp += @s const_track",
+						"/tag @e[tag=attacker] remove attacker",
+						"/scoreboard players set @s hit_type 0"
+					]
+				},
+				"ranged": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/say ranged track",
+						"/scoreboard players operation @s ranged_track = @s health_track",
+						"/scoreboard players operation @s defense_track = @s health_track",
+						"/scoreboard players operation @s const_track = @s health_track",
+						"/scoreboard players operation @s ranged_track *= \"8\" eight_constant",
+						"/scoreboard players operation @s defense_track *= \"4\" four_constant",
+						"/scoreboard players operation @s const_track *= \"4\" four_constant",
+						"/scoreboard players operation @e[tag=attacker] ranged_xp_c += @s ranged_track",
+						"/scoreboard players operation @e[tag=attacker] tot_ranged_xp += @s ranged_track",
+						"/scoreboard players operation @e[tag=attacker] def_xp_c += @s defense_track",
+						"/scoreboard players operation @e[tag=attacker] tot_def_xp += @s defense_track",
+						"/scoreboard players operation @e[tag=attacker] const_xp_c += @s const_track",
+						"/scoreboard players operation @e[tag=attacker] tot_const_xp += @s const_track",
+						"/tag @e[tag=shooter] remove shooter",
+						"/scoreboard players set @s hit_type 0"
+					]
+				},
+				"health_match": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players operation @s health_track = @s health"
+					]
+				}
+			}
+		},
+		//controller for leveling up a players constitution skill
+		"controller.animation.player.constitution_level_up": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"level_up": "query.scoreboard('const_xp_c') >= query.scoreboard('const_xp_r') && query.scoreboard('const_level') < 120 && query.scoreboard('player') >= 5"
+						}
+					]
+				},
+				"level_up": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s total_level 1",
+						"/scoreboard players add @s const_level 1",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A75Constitution\u00A7e leveled up to\u00A7a \"}, {\"score\":{\"name\": \"@s\", \"objective\": \"const_level\"}},{\"text\": \"\u00A7e!\"}]}",
+						"/playsound hitpoints.level.up @s",
+						"/scoreboard players operation @s const_xp_c -= @s const_xp_r",
+						"/function constitution_xp",
+						"/event entity @s runecraft:const_level_up"
+					]
+				}
+			}
+		},
+		//controller for leveling up a players defense skill
+		"controller.animation.player.defense_level_up": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"level_up": "query.scoreboard('def_xp_c') >= query.scoreboard('def_xp_r') && query.scoreboard('def_level') < 120 && query.scoreboard('player') >= 3"
+						}
+					]
+				},
+				"level_up": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s total_level 1",
+						"/scoreboard players add @s def_level 1",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A75Defense\u00A7e leveled up to\u00A7a \"}, {\"score\":{\"name\": \"@s\", \"objective\": \"def_level\"}},{\"text\": \"\u00A7e!\"}]}",
+						"/playsound defense.level.up @s",
+						"/scoreboard players operation @s def_xp_c -= @s def_xp_r",
+						"/function defense_xp",
+						"/event entity @s runecraft:def_level"
+					]
+				}
+			}
+		},
+		//controller for leveling up a players attack skill
+		"controller.animation.player.attack_level_up": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"level_up": "query.scoreboard('attack_xp_c') >= query.scoreboard('attack_xp_r') && query.scoreboard('attack_level') < 120 && query.scoreboard('player') >= 7"
+						}
+					]
+				},
+				"level_up": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s total_level 1",
+						"/scoreboard players add @s attack_level 1",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A75Attack\u00A7e leveled up to\u00A7a \"}, {\"score\":{\"name\": \"@s\", \"objective\": \"attack_level\"}},{\"text\": \"\u00A7e!\"}]}",
+						"/playsound attack.level.up @s",
+						"/scoreboard players operation @s attack_xp_c -= @s attack_xp_r",
+						"/function attack_xp",
+						"/event entity @s runecraft:attack_level"
+					]
+				}
+			}
+		},
+		//controller for leveling up a players ranged skill
+		"controller.animation.player.ranged_level_up": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"level_up": "query.scoreboard('ranged_xp_c') >= query.scoreboard('ranged_xp_r') && query.scoreboard('ranged_level') < 120 && query.scoreboard('player') >= 8"
+						}
+					]
+				},
+				"level_up": {
+					"transitions": [
+						{
+							"default": "1.0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players add @s total_level 1",
+						"/scoreboard players add @s ranged_level 1",
+						"/tellraw @s {\"rawtext\": [{\"text\": \"\u00A75Ranged\u00A7e leveled up to\u00A7a \"}, {\"score\":{\"name\": \"@s\", \"objective\": \"ranged_level\"}},{\"text\": \"\u00A7e!\"}]}",
+						"/playsound ranged.level.up @s",
+						"/scoreboard players operation @s ranged_xp_c -= @s ranged_xp_r",
+						"/function attack_xp",
+						"/event entity @s runecraft:ranged_level"
+					]
+				}
+			}
+		}
+	}
+}

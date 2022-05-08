@@ -1,0 +1,138 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"hitpoints.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/hitpoints_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"hitpoints.level.up.unlock": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/hitpoints_level_up_unlock",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"defense.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/defense_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"defense.level.up.unlock": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/defense_level_up_unlock",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"attack.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/attack_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"attack.level.up.unlock": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/attack_level_up_unlock",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"ranged.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/ranged_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"ranged.level.up.unlock": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/ranged_level_up_unlock",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"agility.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/agility_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"thieving.level.up": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/thieving_level_up",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"thieving.level.up.unlock": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/thieving_level_up_unlock",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"music.main_menu": {
+			"category": "music",
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/menu/main_menu",
+					"stream": true,
+					"volume": 0.30
+				}
+			]
+		},
+		"music.game.jungle": {
+			"category": "music",
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/jungle/jungle_1",
+					"stream": true,
+					"volume": 0.20
+				},
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/jungle/jungle_2",
+					"stream": true,
+					"volume": 0.20
+				},
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/game/jungle/jungle_3",
+					"stream": true,
+					"volume": 0.20
+				}
+			]
+		}
+	}
+}

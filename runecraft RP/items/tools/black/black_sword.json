@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:black_sword",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "black_sword",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}

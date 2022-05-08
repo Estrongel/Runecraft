@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "runecraft:rune_sword",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "rune_sword",
+	  "minecraft:render_offsets": "equipment"
+    }
+  }
+}
